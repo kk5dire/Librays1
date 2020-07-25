@@ -29,10 +29,10 @@ client.lastEdits = lastEdits;
 //basic command handler. https://discordjs.guide/command-handling/
 const handleCommand = (message) => {
     //ignore non command messages and bot messages to prevent loops
-    if (!message.content.startsWith('-sayas')) return;
+    if (!message.content.startsWith('-')) return;
     if (message.author.bot) return;
     //separate command and its arguments from the message
-    const args = message.content.slice('-sayas'.length).trim().split(/ +/g);
+    const args = message.content.slice('-'.length).trim().split(/ +/g);
     const commandName = args.shift().toLowerCase();
 
     //find the command from the loaded command files
@@ -71,7 +71,7 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`-sayas help | ${client.guilds.cache.size} guilds`, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`- help | ${client.guilds.cache.size} guilds`, {type: 'LISTENING'});
 
 //log the ready message and set status on startup
 client.on('ready', () => {
