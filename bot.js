@@ -35,7 +35,8 @@ const handleCommand = (message) => {
     //separate command and its arguments from the message
     const args = message.content.slice('-'.length).trim().split(/ +/g);
     const commandName = args.shift().toLowerCase();
-
+/* const prefix = '-'
+message.channel.send(` ${prefix}`); */
     //find the command from the loaded command files
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.name.startsWith(commandName))
