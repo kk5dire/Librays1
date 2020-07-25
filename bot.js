@@ -29,11 +29,10 @@ client.lastEdits = lastEdits;
 //basic command handler. https://discordjs.guide/command-handling/
 const handleCommand = (message) => {
     //ignore non command messages and bot messages to prevent loops
-    if (!message.content.startsWith(config.prefix)) return;
+    if (!message.content.startsWith(e)) return;
     if (message.author.bot) return;
-
     //separate command and its arguments from the message
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const commandName = args.shift().toLowerCase();
 
     //find the command from the loaded command files
@@ -43,7 +42,7 @@ const handleCommand = (message) => {
     
     //if the command isn't found or its requirements aren't met, exit
     if (!command) return;
-    if (command.ownerOnly && message.author.id !== config.owner) return tools.errorMessage(message, 'this command is set to bot owner only');
+    if (command.ownerOnly && message.author.id !== 686039988605026304) return tools.errorMessage(message, 'this command is set to bot owner only');
     if (command.guildOnly && message.channel.type !== 'text') return tools.errorMessage(message, 'this command is set to server only');
     if (command.nsfw && message.channel.type == 'text' && !message.channel.nsfw) return tools.errorMessage(message, 'this command is set to nsfw channel only');
     if (command.requires && !message.member.permissions.has(command.requires)) return tools.errorMessage(message, `this command requires the ${command.requires} permission`);
@@ -72,7 +71,7 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`${config.prefix}help | ${client.guilds.cache.size} guilds`, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`${e.}help | ${client.guilds.cache.size} guilds`, {type: 'LISTENING'});
 
 //log the ready message and set status on startup
 client.on('ready', () => {
