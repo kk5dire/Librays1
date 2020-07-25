@@ -23,9 +23,7 @@ client.lastDel = lastDel;
 const lastEdits = new Discord.Collection();
 client.lastEdits = lastEdits;
 
-//load configuration from config.json - this has the bot token, prefix and owner ID
-const config = require('./config.json');
-client.config = config;
+
 
 
 //basic command handler. https://discordjs.guide/command-handling/
