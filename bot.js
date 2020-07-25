@@ -29,7 +29,7 @@ client.lastEdits = lastEdits;
 //basic command handler. https://discordjs.guide/command-handling/
 const handleCommand = (message) => {
     //ignore non command messages and bot messages to prevent loops
-    if (!message.content.startsWith(e)) return;
+    if (!message.content.startsWith('e')) return;
     if (message.author.bot) return;
     //separate command and its arguments from the message
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
