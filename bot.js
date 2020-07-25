@@ -108,4 +108,4 @@ client.on('messageUpdate', (oldMsg, newMsg) => {
 
 //log in to Discord with the bot token in config.json
 //go to https://discordapp.com/developers/applications to get your own bot
-client.login(NzM2Njk0MzE5NTgyNTQzOTIy.XxyiDA.s1oo2YQV8W1sbOLXNJg-13EpTaA);
+client.login(NzM2Njk0MzE5NTgyNTQzOTIy.XxyiDA.s1oo2YQV8W1sbOLXNJg13EpTaA);
