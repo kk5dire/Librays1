@@ -30,10 +30,9 @@ client.lastEdits = lastEdits;
 const handleCommand = (message) => {
     //ignore non command messages and bot messages to prevent loops
     if (!message.content.startsWith('e')) return;
-    const prefix = 'e';
     if (message.author.bot) return;
     //separate command and its arguments from the message
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const args = message.content.slice('e.'.length).trim().split(/ +/g);
     const commandName = args.shift().toLowerCase();
 
     //find the command from the loaded command files
