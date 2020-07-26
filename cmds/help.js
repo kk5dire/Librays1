@@ -5,7 +5,7 @@ module.exports = {
     name: 'help',
     aliases: ['?', 'commands', 'cmds'],
     description: 'Shows available commands or command info',
-    usage: '[+print] [cmd]\n\n-p: Send to this channel instead of DM.',
+    usage: '[+print] [cmd]\n\n+print: Send to this channel instead of DM.',
     async execute(message, args) {
         try {
             //determine target by whether "-p" was added
