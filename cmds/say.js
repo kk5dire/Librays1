@@ -1,4 +1,4 @@
-const tools = require('../tools');
+/*const tools = require('../tools');
 
 module.exports = {
     name: 'say',
@@ -20,3 +20,4 @@ module.exports = {
         }
     },
 };
+*/
