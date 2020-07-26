@@ -5,12 +5,12 @@ module.exports = {
     name: 'help',
     aliases: ['?', 'commands', 'cmds'],
     description: 'Shows available commands or command info',
-    usage: '[-p] [cmd]\n\n-p: Send to this channel instead of DM.',
+    usage: '[+print] [cmd]\n\n-p: Send to this channel instead of DM.',
     async execute(message, args) {
         try {
             //determine target by whether "-p" was added
             let target;
-            if (args[0] == '-p') {
+            if (args[0] == '+print') {
                 args.shift();
                 target = message.channel;
             } else {
