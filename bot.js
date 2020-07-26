@@ -41,7 +41,7 @@ message.channel.send(` ${prefix}`); */
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.name.startsWith(commandName))
         || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName))
-    
+
     //if the command isn't found or its requirements aren't met, exit
     if (!command) return;
     if (command.ownerOnly && message.author.id !== '686039988605026304') return tools.errorMessage(message, 'this command is set to bot owner only, only your lord and savior can do this!');
@@ -73,7 +73,7 @@ message.channel.send(` ${prefix}`); */
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`to -help on ${client.guilds.cache.size} server `, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`to -help ${client.guilds.cache.size} servers`, {type: 'LISTENING'});
 
 //log the ready message and set status on startup
 client.on('ready', () => {
