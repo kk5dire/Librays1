@@ -73,7 +73,7 @@ message.channel.send(` ${prefix}`); */
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`for -help ${count.command}`, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`for -help ${message.author}`, {type: 'LISTENING'});
 
 //log the ready message and set status on startup
 client.on('ready', () => {
