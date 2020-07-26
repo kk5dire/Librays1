@@ -10,8 +10,7 @@ module.exports = {
     async execute(message, args) {
         try {
             const output = eval(args.join(' '));
-            const embed = tools.makeEmbed('<:mdCheck:568466407616938004> Success', output);
-            tools.sendEmbed(message.channel, embed);
+           console.log(`evalulated javascript command line ${args}`);
         } catch (err) {
             return tools.errorMessage(message, err);
         }

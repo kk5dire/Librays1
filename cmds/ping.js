@@ -9,14 +9,14 @@ module.exports = {
     async execute(message, args) {
         try {
             const messageSendStart = Number(new Date());
-            const reply = await message.channel.send(":timer:  Checking ping... `message.edit`")
+            const reply = await message.channel.send(":alarm_clock:   Checking ping... `message.edit`")
             const messageSendPing = Number(new Date()) - messageSendStart;
 
             const messageEditStart = Number(new Date());
-            await reply.edit(":timer:  Checking ping... `message.delete`")
+            await reply.edit(":alarm_clock:   Checking ping... `message.delete`")
             const messageEditPing = Number(new Date()) - messageEditStart;
 
-            reply.edit(":timer: > Checking ping... `message.react`")
+            reply.edit(":alarm_clock:  > Checking ping... `message.react`")
             const messageReactStart = Number(new Date());
             await reply.react('✅')
             const messageReactPing = Number(new Date()) - messageReactStart;
@@ -25,7 +25,7 @@ module.exports = {
             await reply.delete();
             const messageDeletePing = Number(new Date()) - messageDeleteStart;
 
-            const embed = tools.makeEmbed(':timer:  Test complete', `Message Send: ${messageSendPing} ms\n`+
+            const embed = tools.makeEmbed(':alarm_clock:   Test complete', `Message Send: ${messageSendPing} ms\n`+
             `Message Edit: ${messageEditPing} ms\nMessage React: ${messageReactPing} ms\nMessage Delete: ${messageDeletePing} ms`+
             `\n\nTotal: ${messageSendPing+messageEditPing+messageReactPing+messageDeletePing} ms\n`, null, message.channel);
         } catch (err) {

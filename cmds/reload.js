@@ -22,7 +22,7 @@ module.exports = {
             message.client.commands.set(newCommand.name, newCommand);
 
             //send a confirmation message
-            const embed = tools.makeEmbed('<:mdCheck:568466407616938004> Success',
+            const embed = tools.makeEmbed(':white_check_mark:  Success',
             `Reloaded command ${newCommand.name}`);
             tools.sendEmbed(message.channel, embed);
         } catch (err) {
