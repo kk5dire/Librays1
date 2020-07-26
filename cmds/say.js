@@ -1,10 +1,11 @@
-/*const tools = require('../tools');
+const tools = require('../tools');
 
 module.exports = {
     name: 'say',
     aliases: ['echo'],
     description: 'Sends the specified message',
     usage: '<message ...>',
+    nsfw: true,
     args: true,
     async execute(message, args) {
         try {
@@ -19,4 +20,3 @@ module.exports = {
         }
     },
 };
-*/
