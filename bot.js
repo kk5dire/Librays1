@@ -40,7 +40,7 @@ message.channel.send(` ${prefix}`); */
     //find the command from the loaded command files
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.name.startsWith(commandName))
-        || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+        || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName))
     
     //if the command isn't found or its requirements aren't met, exit
     if (!command) return;
