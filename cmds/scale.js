@@ -1,4 +1,4 @@
-const Canvas = require('canvas');
+/*const Canvas = require('canvas');
 const tools = require('../tools');
 
 module.exports = {
@@ -42,3 +42,4 @@ module.exports = {
         }
     },
 };
+*/

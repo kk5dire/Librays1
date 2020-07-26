@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+/*const Discord = require('discord.js');
 const tools = require('../tools');
 
 module.exports = {
@@ -23,3 +23,4 @@ module.exports = {
         }
     },
 };
+*/
