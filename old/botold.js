@@ -2,6 +2,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const tools = require('./tools');
+const { send } = require('process');
 
 //create a client, the bot itself
 const client = new Discord.Client();
@@ -23,29 +24,27 @@ client.lastDel = lastDel;
 const lastEdits = new Discord.Collection();
 client.lastEdits = lastEdits;
 
-//load configuration from config.json - this has the bot token, prefix and owner ID
-const config = require('./config.json');
-client.config = config;
+
 
 
 //basic command handler. https://discordjs.guide/command-handling/
 const handleCommand = (message) => {
     //ignore non command messages and bot messages to prevent loops
-    if (!message.content.startsWith(config.prefix)) return;
+    if (!message.content.startsWith('-')) return;
     if (message.author.bot) return;
-
     //separate command and its arguments from the message
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice('-'.length).trim().split(/ +/g);
     const commandName = args.shift().toLowerCase();
-
+/* const prefix = '-'
+message.channel.send(` ${prefix}`); */
     //find the command from the loaded command files
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.name.startsWith(commandName))
-        || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-    
+        || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName))
+
     //if the command isn't found or its requirements aren't met, exit
     if (!command) return;
-    if (command.ownerOnly && message.author.id !== config.owner) return tools.errorMessage(message, 'this command is set to bot owner only');
+    if (command.ownerOnly && message.author.id !== '686039988605026304') return tools.errorMessage(message, 'this command is set to bot owner only, only your lord and savior can do this!');
     if (command.guildOnly && message.channel.type !== 'text') return tools.errorMessage(message, 'this command is set to server only');
     if (command.nsfw && message.channel.type == 'text' && !message.channel.nsfw) return tools.errorMessage(message, 'this command is set to nsfw channel only');
     if (command.requires && !message.member.permissions.has(command.requires)) return tools.errorMessage(message, `this command requires the ${command.requires} permission`);
@@ -74,7 +73,7 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`${config.prefix}help | ${client.guilds.cache.size} guilds`, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`to -help ${client.guilds.cache.size} servers`, {type: 'LISTENING'});
 
 //log the ready message and set status on startup
 client.on('ready', () => {
@@ -108,4 +107,4 @@ client.on('messageUpdate', (oldMsg, newMsg) => {
 
 //log in to Discord with the bot token in config.json
 //go to https://discordapp.com/developers/applications to get your own bot
-client.login(config.token);
+client.login('NzM2Njk0MzE5NTgyNTQzOTIy.XxyiDA.xSx7sbLgs5hSJOZFNalv91KbiWU');
