@@ -10,7 +10,7 @@ module.exports = {
     async execute(message, args) {
         try {
             const output = eval(args.join(' '));
-           console.log(`evalulated javascript command line ${args}`);
+           console.log(`evalulated javascript command line |  "${args}"`);
         } catch (err) {
             return tools.errorMessage(message, err);
         }
