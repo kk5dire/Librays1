@@ -24,7 +24,7 @@ module.exports = {
                 embed.setColor(0x7289DA)
                 .setTitle(':information_source:  Commands')
                 .setDescription(message.client.commands.map(mapFunction).join('\n'))
-                .setFooter('🔞 = nsfw   🔒 = bot owner only   🖼️ = image command');
+                .setFooter(' 🔒 = bot owner only   🖼️ = image command');
             } else {
                 //otherwise show info on one command
                 const name = args[0].toLowerCase();
