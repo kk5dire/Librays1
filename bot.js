@@ -73,7 +73,7 @@ message.channel.send(` ${prefix}`); */
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`to -help ${client.guilds.cache.size} servers`, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`to -help on ${client.guilds.cache.size} server `, {type: 'LISTENING'});
 
 //log the ready message and set status on startup
 client.on('ready', () => {
