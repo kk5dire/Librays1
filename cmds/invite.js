@@ -12,8 +12,8 @@ module.exports = {
             .setColor(0x7289DA)
             .setTitle(':mega: Links')
             .setDescription(
-            Servers: ${client.guilds.cache.size}/${client.users.cache.size} : Members watching
-            .setFooter(new Date().toISOString());
+           ` Servers: ${client.guilds.cache.size}/${client.users.cache.size} : Members watching` 
+            .setFooter(new Date().toISOString()));
             tools.sendEmbed(message.channel, embed);
         } catch (err) {
             return tools.errorMessage(message, err);
