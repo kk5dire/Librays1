@@ -6,8 +6,7 @@
   "dependencies": {
     "bot.js": "0.0.1",
     "canvas": "^2.6.1",
-    "config": "^3.3.1",
-    "config.json": "0.0.4",
+    "config.json": "^11.4.2",
     "discord.js": "github:discordjs/discord.js",
     "node-fetch": "^2.6.0",
     "tools.js": "^0.2.7"
