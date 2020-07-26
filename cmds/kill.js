@@ -18,7 +18,7 @@ module.exports = {
                 `${target} didn't join [the meme cave](http://discord.gg/dvsxQQG).`,
                 `${target} was caught awake at 3am.`,
                 `${target} got rejected.`,
-                `${target} nutted twice in a day, his weak body couldn't last any more.`,
+                `${target} found out iyr was so hot they died in their presence.`,
                 `${target} laughed at an instagram meme.`,
                 `${target} got wooooshed.`,
                 `${target} was a mod in r/dankmemes.`,
