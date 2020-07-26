@@ -1,4 +1,4 @@
-/*const Discord = require('discord.js');
+const Discord = require('discord.js');
 const tools = require('../tools');
 
 module.exports = {
@@ -10,13 +10,9 @@ module.exports = {
         try {
             const embed = new Discord.MessageEmbed()
             .setColor(0x7289DA)
-            .setTitle('<:mdExternal:568466408212529153> Links')
+            .setTitle(':mega: Links')
             .setDescription(
-            `[Add me to your server](https://discordapp.com/api/oauth2/authorize?client_id=${message.client.user.id}&permissions=8&scope=bot)\n`+
-            `[Join the meme cave™](https://discord.gg/vRzh7wr)\n`+
-            `[Join development server](https://discord.gg/bRTPbpg)\n`+
-            `[Join icon emotes server](https://discord.gg/TVQdyea)\n`+
-            `[View source code](https://github.com/gtrxAC/gtrxBot2)`)
+            Servers: ${client.guilds.cache.size}/${client.users.cache.size} : Members watching
             .setFooter(new Date().toISOString());
             tools.sendEmbed(message.channel, embed);
         } catch (err) {
@@ -24,4 +20,3 @@ module.exports = {
         }
     },
 };
-*/
