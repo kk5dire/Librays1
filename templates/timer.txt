@@ -1,0 +1,10 @@
+let msg;
+bot.on("message", async message => {
+  // Send message & Store reference to the message
+  msg = await message.channel.send('Hi');
+
+  setTimeout(() => {
+    // Edit msg 20 seconds later
+    msg.edit('Hello');
+  }, 20000);
+});
