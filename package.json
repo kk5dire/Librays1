@@ -1,7 +1,7 @@
 {
-  "name": "gtrxbot2",
+  "name": "QuoteTools",
   "version": "2.0.0",
-  "description": "Utility discord bot with image editing commands",
+  "description": "A quick and fun way to make quotes of other users",
   "main": "bot.js",
   "dependencies": {
     "canvas": "^2.6.1",
@@ -17,14 +17,14 @@
     "api",
     "bot"
   ],
-  "author": "gtrxAC",
+  "author": "gtrxAC person iyr",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gtrxAC/gtrxBot2.git"
+    "url": "https://github.com/kk5dire/e"
   },
   "bugs": {
-    "url": "https://github.com/gtrxAC/gtrxBot2/issues"
+    "url": "https://github.com/kk5dire/e/issues"
   },
-  "homepage": "https://github.com/gtrxAC/gtrxBot2"
+  "homepage": "https://github.com/kk5dire/e"
 }
