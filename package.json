@@ -4,12 +4,9 @@
   "description": "Utility discord bot with image editing commands",
   "main": "bot.js",
   "dependencies": {
-    "bot.js": "0.0.1",
     "canvas": "^2.6.1",
-    "config.json": "^11.4.2",
     "discord.js": "github:discordjs/discord.js",
-    "node-fetch": "^2.6.0",
-    "tools.js": "^0.2.7"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {},
   "scripts": {
