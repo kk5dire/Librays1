@@ -22,7 +22,7 @@ module.exports = {
             if (!args.length) {
                 const mapFunction = command => `\`${command.name}\`   ${command.description} ${command.nsfw ? '\\🔞 ' : ''}${command.ownerOnly ? '\\🔒 ' : ''}${command.image ? '\\🖼️ ' : ''}`;
                 embed.setColor(0x7289DA)
-                .setTitle('<:mdHelp:568466408548335650> Commands')
+                .setTitle('<:help:737449040652009542> Commands')
                 .setDescription(message.client.commands.map(mapFunction).join('\n'))
                  .setFooter('🔒 = bot owner only   🖼️ = image command ');
             } else {
@@ -42,7 +42,7 @@ module.exports = {
             tools.sendEmbed(target, embed).then(() => {
                 //if the user needs to check DMs, send a confirmation
                 if (target == message.channel || message.channel.type == 'dm') return;
-                 const embed = tools.makeEmbed(':speech_left:  DM sent!', 'Use +print to send to this channel instead.');
+                 const embed = tools.makeEmbed(':incoming_envelope:   DM sent!', 'Use +print to send to this channel instead.');
                 tools.sendEmbed(message.channel, embed);
             }).catch((error) => {
                 throw `can't send DM, do you have DMs disabled?\n${error}`;

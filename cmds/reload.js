@@ -22,7 +22,7 @@ module.exports = {
             message.client.commands.set(newCommand.name, newCommand);
 
             //send a confirmation message
-            const embed = tools.makeEmbed(':white_check_mark:  Success',
+            const embed = tools.makeEmbed('<:AYS_check:737449100009799752>  Success',
             `Reloaded command ${newCommand.name}`);
             tools.sendEmbed(message.channel, embed);
         } catch (err) {

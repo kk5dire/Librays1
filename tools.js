@@ -9,7 +9,7 @@ module.exports = {
     async errorMessage(message, err) {
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle(':warning:  Error')
+        .setTitle('<a:NO:737449203726549122>  Error')
         .setDescription(`${err}`)
         .setFooter(new Date().toISOString());
         const outMsg = await this.sendEmbed(message.channel, embed);
