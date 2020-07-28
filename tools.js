@@ -42,7 +42,7 @@ module.exports = {
     sendEmbed(channel, embed) {
         return channel.send(embed).catch(e => {
             channel.send(`>>> **${embed.title}**\n${embed.description}\n${embed.footer ? embed.footer.text+'\n' : ''}`+
-            `  Error sending embed message, make sure I can send them.\n(${e})`)
+            `  \`\`\`Error sending embed message, make sure I can send them.\n(${e}) \`\`\` `)
         })
     }
 }
