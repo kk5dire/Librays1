@@ -18,7 +18,7 @@ module.exports = {
     async execute(message, args) {
         try {
             let msg;
-            bot.on("message", async message => {
+            client.on("message", async message => {
               // Send message & Store reference to the message
               msg = await message.channel.send(`:timer: | Timer for **${args}**`);
               setTimeout(() => {
