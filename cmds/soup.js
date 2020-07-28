@@ -14,7 +14,7 @@ module.exports = {
     requires: '',
     cooldown: 0,
     minArgs: 0,
-    maxArgs: X,
+    maxArgs: 1,
     async execute(message, args) {
         try {
 message.channel.send("you mean the simp"?);
