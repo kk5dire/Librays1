@@ -71,8 +71,7 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setPresence({ game: { name: 'development', type: "streaming", url: "https://www.twitch.tv/kk5dire"}}); 
-
+const setStatus = () => client.user.setPresence({ game: { name: 'development' }, status: 'online' });
 //log the ready message and set status on startup
 client.on('ready', () => {
     console.log('');
