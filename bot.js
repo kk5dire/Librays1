@@ -71,7 +71,7 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`-help | super secret development cmds 👀`, {type: 'LISTENING'});
+const setStatus = () => client.user.setActivity(`-help `, {type: 'LISTENING'});
 //log the ready message and set status on startup
 client.on('ready', () => {
     console.log('');
