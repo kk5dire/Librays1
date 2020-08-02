@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const tools = require('../tools');
 
 module.exports = {
-    name: 'help',
-    aliases: ['?', 'commands', 'cmds'],
+    name: 'librarys',
+    aliases: ['?', 'libs', 'lib'],
     description: 'Shows available commands or command info',
    usage: '[+print] [cmd]\n\n+print: Send to this channel instead of DM.',
     async execute(message, args) {
