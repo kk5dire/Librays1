@@ -13,18 +13,18 @@ module.exports = {
 
             //select a random message from the list...
             const messages = [
-                `${target} died.`,
-                `${target} ate too much ass.`,
-                `${target} didn't join [the meme cave](http://discord.gg/dvsxQQG).`,
-                `${target} was caught awake at 3am.`,
-                `${target} got rejected.`,
-                `${target} found out iyr was so hot they died in their presence.`,
-                `${target} laughed at an instagram meme.`,
-                `${target} got wooooshed.`,
-                `${target} was a mod in r/dankmemes.`,
-                `${target} ran out of ideas.`,
-                `${target} stepped on a LEGO.`,
-                `${target} ate a bat from Wuhan, China.`
+                `${target} \`kill message 1\``,
+                `${target} \`kill message 2\``,
+                `${target} \`kill message 3\``,
+                `${target} \`kill message 4\``,
+                `${target} \`kill message 5\``,
+                `${target} \`kill message 6\``,
+                `${target} \`kill message 7\``,
+                `${target} \`kill message 8\``,
+                `${target} \`kill message 9\``,
+                `${target} \`kill message 10\``,
+                `${target} \`kill message 11\``,
+                `${target} \`kill message 12\``
                 //add your own messages here or suggest them: https://discord.gg/bRTPbpg
             ]
             const killMsg = messages[Math.floor(Math.random() * messages.length)];
