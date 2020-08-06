@@ -15,7 +15,7 @@ module.exports = {
         
             //select a random message from the list...
             const messages = [
-          '${author} slips bleach into ${target}'s lemonade.',
+          '${author} slips bleach into ${target}\'s lemonade.',
         '${target} dies of natural causes.',
         '${target} dies from bad succ.',
         '${target} dies from dabbing too hard.',
