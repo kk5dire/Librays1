@@ -12,7 +12,7 @@ module.exports = {
     async execute(message, args) {
         try {
             //use the given text as the target, or your mention if nothing was given
-          let target;
+          let target
             if (args.length) {target = args.join(' ')}
             else {target = message.author;};
 
