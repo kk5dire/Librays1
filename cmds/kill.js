@@ -2,7 +2,7 @@ const tools = require('../tools');
 
 module.exports = {
        name: 'kill',
-    aliases: [murder],
+    aliases: ['murder'],
     description: 'kill a user',
     usage: '-kill @user',
     args: true,
