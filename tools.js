@@ -11,7 +11,7 @@ module.exports = {
         .setColor(0x7289DA)
         .setTitle('<a:NO:737449203726549122>  Error')
         .setDescription(`${err}`)
-        .setFooter(new Date().toISOString());
+        .setFooter('hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 10000});
         if(message.channel.type == 'text') message.delete({timeout: 10000});
