@@ -193,7 +193,7 @@ module.exports = {
         '${target} died from a tragic amount of bad succ',
         '${target} dies by swearing on a Christian Minecraft server',
         '${target} died. OOF',
-        '${target} died while listening to \'It\'s every day bro'',
+        '${target} died while listening to \'It\'s every day bro',
         '${target} died while trying to find the city of England',
         '${target} died from a high salt intake',
         '${target} died due to ${author} being so stupid',
