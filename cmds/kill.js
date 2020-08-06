@@ -205,7 +205,7 @@ module.exports = {
         `${target} died from meme underdose :/`,
         `${target} died after realizing how shitty their grammar was`,
         `${target} died after fapping 50 times in a row with no break.`,
-        `${target} dies from severe dislike of sand. It\`s coarse and rough and irritating it gets everywhere`
+        `${target} dies from severe dislike of sand. It\`s coarse and rough and irritating it gets everywhere`,
       `There will never be enough middle fingers in this world for ${target}`,
         `I'm betting your keyboard is filthy as fuck now from all that Cheeto-dust finger typing, you goddamn weaboo shut in. `,
         `Bards will chant parables of your legendary stupidity for centuries, ${target}`,
