@@ -6,6 +6,7 @@ module.exports = {
     description: 'Memegen: You ever cry because of how beautiful something is?',
     usage: '[image]',
     image: true,
+    args: true,
     cooldown: 4,
     async execute(message, args) {
         try {
