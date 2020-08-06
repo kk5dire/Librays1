@@ -24,7 +24,7 @@ module.exports = {
                 embed.setColor(0x7289DA)
                 .setTitle('<:help:737449040652009542> Commands')
                 .setDescription(message.client.commands.map(mapFunction).join('\n'))
-                 .setFooter('🔒 = bot owner only   🖼️ = image command ');
+                 .setFooter('hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D');
             } else {
                 //otherwise show info on one command
                 const name = args[0].toLowerCase();
