@@ -8,7 +8,7 @@ module.exports = {
    usage: '[+print] [cmd]\n\n+print: Send to this channel instead of DM.',
     async execute(message, args) {
         try {
-            //determine target by whether "-p" was added
+            //determine target by whether "+print" was added
             let target;
               if (args[0] == '+print') {
                 args.shift();
