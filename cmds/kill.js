@@ -12,7 +12,10 @@ module.exports = {
     async execute(message, args) {
         try {
             //use the given text as the target, or your mention if nothing was given
-        
+          let target;
+            if (args.length) {target = args.join(' ')}
+            else {target = message.author;};
+
             //select a random message from the list...
             const messages = [
           '${author} slips bleach into ${target}\'s lemonade.',
