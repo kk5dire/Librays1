@@ -11,7 +11,7 @@ module.exports = {
         .setColor(0x7289DA)
         .setTitle('<a:NO:737449203726549122>  Error')
         .setDescription(`${err}`)
-        .setFooter('hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D');
+        .setFooter('https://dsc.bio/kk5dire');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 10000});
         if(message.channel.type == 'text') message.delete({timeout: 10000});
@@ -26,12 +26,12 @@ module.exports = {
     makeEmbed(title, desc, footer, channel) {
         if (!title) title = '';
         if (!desc) desc = '';
-        if (!footer) footer = 'hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D';
+        if (!footer) footer = 'https://dsc.bio/kk5dire';
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter('hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D');
+        .setFooter('https://dsc.bio/kk5dire');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
