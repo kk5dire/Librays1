@@ -26,12 +26,12 @@ module.exports = {
     makeEmbed(title, desc, footer, channel) {
         if (!title) title = '';
         if (!desc) desc = '';
-        if (!footer) footer = new Date().toISOString();
+        if (!footer) footer = 'hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D';
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter(footer);
+        .setFooter('hi i am iylibrarys the storage and moderation bot for the pepe planet dev server :D');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
