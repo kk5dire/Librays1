@@ -1,9 +1,14 @@
 const tools = require('../tools');
 
 module.exports = {
-    name: 'kill',
-    description: 'Kills the specified user in a random way',
-    usage: '[text or @user]',
+       name: 'kill',
+    aliases: [murder],
+    description: 'kill a user',
+    usage: '-kill @user',
+    args: true,
+    cooldown: 2,
+    minArgs: 0,
+    maxArgs: 2,
     async execute(message, args) {
         try {
             //use the given text as the target, or your mention if nothing was given
