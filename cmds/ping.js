@@ -3,7 +3,7 @@ const tools = require('../tools');
 
 module.exports = {
     name: 'ping',
-    aliases: ['test'],
+    aliases: ['pong'],
     description: "Check the connection ping to Discord's servers",
     cooldown: 5,
     async execute(message, args) {
