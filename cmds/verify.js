@@ -12,7 +12,13 @@ module.exports = {
     guildOnly: false,
     ownerOnly: false,
     async execute(message, args) {
-        try {
+        var Channel = message.channel.name
+
+if (message.content === "command") {
+    if(Channel != "Channel name here") {
+        message.channel.send('Cannot use command here, ' + message.author);
+    } else {
+           try {
  
 let role = message.guild.roles.cache.get("736595065040011296");
 let member = message.member;
@@ -23,6 +29,10 @@ member.roles.add(role)
   message.author.send(embed);
  message.delete(1)
          
+        // Insert command code here
+    }
+}
+     
 
         } catch (err) {
             console.log(err);
