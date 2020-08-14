@@ -13,11 +13,12 @@ module.exports = {
     ownerOnly: false,
     async execute(message, args) {
         try {
+               let role = message.guild.roles.cache.get("740106890024976407");
+let member = message.member;
 // assuming role.id is an actual ID of a valid role:
 if(message.member.roles.cache.some('740106890024976407')) {
   console.log(`Yay, the author of the message has the role!`);
-  let role = message.guild.roles.cache.get("740106890024976407");
-let member = message.member;
+
 
 
 member.roles.add(role)
@@ -26,8 +27,7 @@ member.roles.add(role)
    return;
 } else {
   console.log(`Nope, noppers, nadda.`);
-   let role = message.guild.roles.cache.get("740106890024976407");
-let member = message.member;
+
 
 
 member.roles.remove(role)
