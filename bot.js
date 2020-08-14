@@ -15,6 +15,17 @@ for (const file of commandFiles) {
     const command = require(`./cmds/${file}`);
     client.commands.set(command.name, command);
 }
+const activities_list = [
+    "-librarys to get started", 
+    "-verify in #entry",
+    "with some code",
+    "with aya , having a good time :)"
+    "protecting pepe planet development"
+    "hugging iyr"
+    "with development work"
+    "finding the cutest emotes"
+    "with experimental features👀"
+    ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 //make a list for the last deleted message of each channel (for snipe command)
 const lastDel = new Discord.Collection();
@@ -70,18 +81,6 @@ const handleCommand = (message) => {
     timestamps.set(message.author.id, now);
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
-
-const activities_list = [
-    "-librarys to get started", 
-    "-verify in #entry",
-    "with some code", 
-    "with aya , having a good time :)"
-    "protecting pepe planet development"
-    "hugging iyr"
-    "with development work"
-    "finding the cutest emotes"
-    "with experimental features👀"
-    ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
     setInterval(() => {
