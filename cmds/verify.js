@@ -14,7 +14,7 @@ module.exports = {
     async execute(message, args) {
         try {
  
-let role = message.guild.roles.get("736595065040011296");
+let role = message.guild.roles.cache.get("736595065040011296");
 let member = message.member;
 
 //adds the role
