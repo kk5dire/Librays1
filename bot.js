@@ -93,7 +93,6 @@ client.on('ready', () => {
     console.log(`* ID: ${client.user.id}`);
     console.log(`* Guilds/Users: ${client.guilds.cache.size}/${client.users.cache.size}`);
     console.log('');
-    setStatus();
 });
 
 //if amount of accessible guilds changes, update the count
