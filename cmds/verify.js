@@ -3,7 +3,7 @@ const tools = require('../tools');
 
 module.exports = {
     name: 'verify',
-    aliases: [veri],
+    aliases: ['veri'],
     description: 'verify your user and enter the testing server',
     usage: '-ver',
     nsfw: false,
