@@ -14,7 +14,7 @@ module.exports = {
     async execute(message, args) {
         try {
 // assuming role.id is an actual ID of a valid role:
-if(message.member.roles.cache.some('740106890024976407')).then {
+if(message.member.roles.cache.some('740106890024976407')) {
   console.log(`Yay, the author of the message has the role!`);
   let role = message.guild.roles.cache.get("740106890024976407");
 let member = message.member;
@@ -23,7 +23,7 @@ let member = message.member;
 member.roles.add(role)
   const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
   message.channel.send(embed);
-         
+   return;
 } else {
   console.log(`Nope, noppers, nadda.`);
    let role = message.guild.roles.cache.get("740106890024976407");
