@@ -13,7 +13,7 @@ module.exports = {
     ownerOnly: false,
     async execute(message, args) {
         try {
-let role = message.guild.roles.find(r => r.name === "testbot");
+let role = guild.roles.cache.find(r => r.name === "testbot");
 let member = message.member;
 
 //adds the role
