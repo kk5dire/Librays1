@@ -15,7 +15,7 @@ module.exports = {
         var Channel = message.channel.name
 
 if (message.content === "command") {
-    if(Channel != "Channel name here") {
+    if(Channel != "𝗲𝗻𝘁𝗿𝘆│🔌") {
         message.channel.send('Cannot use command here, ' + message.author);
     } else {
            try {
@@ -31,10 +31,7 @@ member.roles.add(role)
          
         // Insert command code here
     }
-}
-     
-
-        } catch (err) {
+} catch (err) {
             console.log(err);
         }
     },
