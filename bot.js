@@ -93,7 +93,7 @@ const handleCommand = (message) => {
     */
 
 // Alt Status
-client.user.setPresence({
+client.user.setActivity({
     status: 'dnd',
     activity: {
         name: 'Maintenance Mode',
