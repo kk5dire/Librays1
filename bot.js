@@ -71,7 +71,21 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-const setStatus = () => client.user.setActivity(`-librarys `, {type: 'LISTENING'});
+const activities_list = [
+    "-librarys to get started", 
+    "-verify in #entry",
+    "with some code", 
+    "with aya , having a good time :)"
+    ]; // creates an arraylist containing phrases you want your bot to switch through.
+
+client.on('ready', () => {
+    setInterval(() => {
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
+        bot.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
+    }, 10000); // Runs this every 10 seconds.
+    
+   
+});
 //log the ready message and set status on startup
 client.on('ready', () => {
     console.log('');
@@ -83,9 +97,6 @@ client.on('ready', () => {
 });
 
 //if amount of accessible guilds changes, update the count
-client.on('guildCreate', guild => setStatus());
-client.on('guildDelete', guild => setStatus());
-
 //handle a possible command when a message is received
 client.on('message', (message) => {
     handleCommand(message);
