@@ -3,7 +3,7 @@ const tools = require('../tools');
 
 module.exports = {
     name: 'giveaway',
-    aliases: ['gaw'],
+    aliases: ['gw'],
     description: 'adds/removes the giveaway manager role from the user',
     usage: '-giveaway',
     nsfw: false,
