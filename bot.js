@@ -93,7 +93,14 @@ const handleCommand = (message) => {
     */
 
 // Alt Status
-   client.user.setStatus('dnd', 'Maintenance Mode') 
+bot.user.setPresence({
+    status: 'dnd',
+    activity: {
+        name: 'Maintenance Mode',
+        type: 'PLAYING',
+    
+    }
+})
 
 //log the ready message and set status on startup
 client.on('ready', () => {
