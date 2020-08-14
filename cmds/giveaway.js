@@ -14,7 +14,7 @@ module.exports = {
     async execute(message, args) {
         try {
 // assuming role.id is an actual ID of a valid role:
-if(message.member.roles.cache.some('740106890024976407')) {
+if(message.member.roles.cache.some('740106890024976407')).then {
   console.log(`Yay, the author of the message has the role!`);
   let role = message.guild.roles.cache.get("740106890024976407");
 let member = message.member;
