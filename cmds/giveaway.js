@@ -19,20 +19,20 @@ let member = message.member;
 if(message.member.roles.cache.some('740106890024976407')) {
   console.log(`Yay, the author of the message has the role!`);
 
+member.roles.remove(role)
+  const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , removed the role(s)')
+  message.channel.send(embed);
 
 
+
+} else {
+  console.log(`Nope, noppers, nadda.`);
 member.roles.add(role)
   const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
   message.channel.send(embed);
    return;
-} else {
-  console.log(`Nope, noppers, nadda.`);
 
 
-
-member.roles.remove(role)
-  const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , removed the role(s)')
-  message.channel.send(embed);
 }
         } catch (err) {
             return tools.errorMessage(message, err);
