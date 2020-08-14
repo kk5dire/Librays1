@@ -13,7 +13,8 @@ module.exports = {
     ownerOnly: false,
     async execute(message, args) {
         try {
-let role = guild.roles.cache.find(r => r.name === "testbot");
+ 
+let role = <734545562166231070>.roles.cache.find(r => r.name === "testbot");
 let member = message.member;
 
 //adds the role
