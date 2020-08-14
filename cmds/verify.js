@@ -12,14 +12,15 @@ module.exports = {
     guildOnly: false,
     ownerOnly: false,
     async execute(message, args) {
-        var Channel = message.channel.name
+  
+           try {
+ var Channel = message.channel.name
 
 if (message.content === "command") {
     if(Channel != "𝗲𝗻𝘁𝗿𝘆│🔌") {
         message.channel.send('Cannot use command here, ' + message.author);
     } else {
-           try {
- 
+   
 let role = message.guild.roles.cache.get("736595065040011296");
 let member = message.member;
 
@@ -28,10 +29,10 @@ member.roles.add(role)
   const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
   message.author.send(embed);
  message.delete(1)
-         
-        // Insert command code here
+     // Insert command code here
     }
-}.catch (err) {
+}
+        }catch (err) {
             console.log(err);
         }
     },
