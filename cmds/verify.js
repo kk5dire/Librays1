@@ -31,8 +31,10 @@ member.roles.add(role)
      // Insert command code here
     }
 }
-        }catch (err) {
-            console.log(err);
-        }
+        } catch (err) {
+  console.log(err);
+  // expected output: ReferenceError: nonExistentFunction is not defined
+  // Note - error messages will vary depending on browser
+}
     },
 };
