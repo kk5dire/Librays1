@@ -14,7 +14,7 @@ module.exports = {
     async execute(message, args) {
   
            try {
- var ChannelID = message.channel.id
+ const ChannelID = message.channel.id
  
     if(ChannelID != "737028828584476702") {
         message.channel.send('Cannot use command here, ' + message.author);
