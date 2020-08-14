@@ -5,7 +5,7 @@ module.exports = {
     name: 'verify',
     aliases: ['veri'],
     description: 'verify your user and enter the testing server, one time command (for new users)',
-    usage: '-ver',
+    usage: '-verify',
     nsfw: false,
     image: false,
     args: false,
@@ -19,7 +19,7 @@ let member = message.member;
 
 
 member.roles.add(role)
-  const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success , gave you the role!')
+  const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
   message.author.send(embed);
  message.delete(1)
          
