@@ -28,6 +28,10 @@ for (const file of commandFiles) {
     "with experimental features👀"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 */
+// Alt status array
+ const activities_list = [
+    "Under Maintenance"
+    ]; // creates an arraylist containing phrases you want your bot to switch through.
 //make a list for the last deleted message of each channel (for snipe command)
 const lastDel = new Discord.Collection();
 client.lastDel = lastDel;
@@ -84,23 +88,15 @@ const handleCommand = (message) => {
 }
 
 // Main status 
-/* client.on('ready', () => {
+ client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
         client.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
     }, 10000); // Runs this every 10 seconds.
     });
-    */
-
-// Alt Status
-client.user.setActivity({
-    status: 'dnd',
-    activity: {
-        name: 'Maintenance Mode',
-        type: 'PLAYING',
     
-    }
-})
+
+
 
 //log the ready message and set status on startup
 client.on('ready', () => {
