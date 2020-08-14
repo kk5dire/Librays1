@@ -24,7 +24,7 @@ member.roles.add(role)
          
 
         } catch (err) {
-            return tools.errorMessage(message, err);
+            console.log(err);
         }
     },
 };
