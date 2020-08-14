@@ -12,9 +12,8 @@ module.exports = {
     guildOnly: false,
     ownerOnly: false,
     async execute(message, args) {
-  
-           try {
-   
+        try {
+ 
 let role = message.guild.roles.cache.get("736595065040011296");
 let member = message.member;
 
@@ -23,13 +22,10 @@ member.roles.add(role)
   const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
   message.author.send(embed);
  message.delete(1)
-  
-}
-    }
+         
+
         } catch (err) {
-  console.log(err);
-  // expected output: ReferenceError: nonExistentFunction is not defined
-  // Note - error messages will vary depending on browser
-}
+            console.log(err);
+        }
     },
 };
