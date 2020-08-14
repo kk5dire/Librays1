@@ -19,11 +19,11 @@ const activities_list = [
     "-librarys to get started", 
     "-verify in #entry",
     "with some code",
-    "with aya , having a good time :)"
-    "protecting pepe planet development"
-    "hugging iyr"
-    "with development work"
-    "finding the cutest emotes"
+    "with aya , having a good time :)",
+    "protecting pepe planet development",
+    "hugging iyr",
+    "with development work",
+    "finding the cutest emotes",
     "with experimental features👀"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
