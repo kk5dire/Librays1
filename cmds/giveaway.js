@@ -10,7 +10,7 @@ module.exports = {
     image: false,
     args: false,
     guildOnly: false,
-    ownerOnly: false,
+    ownerOnly: true,
     async execute(message, args) {
         try {
                let role = message.guild.roles.cache.find("740106890024976407");
