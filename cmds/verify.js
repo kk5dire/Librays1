@@ -25,6 +25,7 @@ member.roles.add(role)
  message.delete(1)
   
 }
+    }
         } catch (err) {
   console.log(err);
   // expected output: ReferenceError: nonExistentFunction is not defined
