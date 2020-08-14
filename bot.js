@@ -15,7 +15,8 @@ for (const file of commandFiles) {
     const command = require(`./cmds/${file}`);
     client.commands.set(command.name, command);
 }
-const activities_list = [
+// Main status array
+/* const activities_list = [
     "-librarys to get started", 
     "-verify in #entry",
     "with some code",
@@ -26,7 +27,7 @@ const activities_list = [
     "finding the cutest emotes",
     "with experimental features👀"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
-
+*/
 //make a list for the last deleted message of each channel (for snipe command)
 const lastDel = new Discord.Collection();
 client.lastDel = lastDel;
@@ -82,13 +83,16 @@ const handleCommand = (message) => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
 
-client.on('ready', () => {
+// Main status 
+/* client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
         client.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
     }, 10000); // Runs this every 10 seconds.
-    
-   
+    */
+
+// Alt Status
+   client.user.setStatus('dnd', 'Maintenance Mode') 
 });
 //log the ready message and set status on startup
 client.on('ready', () => {
