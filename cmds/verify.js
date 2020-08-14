@@ -19,7 +19,8 @@ let member = message.member;
 
 
 member.roles.add(role)
-  message.author.send("<:AYS_check:737449100009799752> success , gave you the role!");
+  
+  message.author.send(const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success , gave you the role!'));
  message.delete(1)
          
 
