@@ -27,9 +27,6 @@ let member = message.member;
  message.delete(1)
   
     }
-
-        } catch (err) {
-  console.log(err);
          
 
         } catch (err) {
