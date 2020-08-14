@@ -31,7 +31,7 @@ member.roles.add(role)
          
         // Insert command code here
     }
-} catch (err) {
+}catch (err) {
             console.log(err);
         }
     },
