@@ -10,7 +10,7 @@ module.exports = {
     image: false,
     args: false,
     guildOnly: false,
-    ownerOnly: true,
+    ownerOnly: false,
        async execute(message, args) {
         try {
         // assuming role.id is an actual ID of a valid role:
@@ -19,7 +19,7 @@ module.exports = {
           let role = message.guild.roles.cache.get('740106890024976407'); // access role
           let member = message.member;
            member.roles.remove(role.id)
-          const embed = tools.makeEmbed(':AYS_check: success! , removed the role(s)')
+          const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , removed the role(s)')
           message.channel.send(embed);
           
          
@@ -29,7 +29,7 @@ module.exports = {
           let role = message.guild.roles.cache.get('740106890024976407'); // access role
           let member = message.member;
            member.roles.add(role.id)
-          const embed = tools.makeEmbed(':AYS_check: success! , gave you the role(s)')
+          const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
           message.channel.send(embed);
           
          
