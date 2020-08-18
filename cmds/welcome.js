@@ -8,10 +8,9 @@ module.exports = {
     usage: '-welcome @user',
     nsfw: false,
     image: false,
-    args: true,
+    args: false,
     guildOnly: false,
     ownerOnly: false,
-    minArgs: 1,
     async execute(message, args) {
         try {
  let target
