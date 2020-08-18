@@ -106,10 +106,7 @@ client.on('ready', () => {
     console.log(`* Guilds/Users: ${client.guilds.cache.size}/${client.users.cache.size}`);
     console.log('');
 });
-client.on('guildMemberAdd', member => {
-       member.guild.defaultChannel.send(`Welcome to the server, ${member}! type -verify in <#737028828584476702> to get started and type -welcome @myusername in <#736595341847298158> for more info about the server`);
-       console.log(`${member.user.username} has joined`);
-});
+
 
 //if amount of accessible guilds changes, update the count
 //handle a possible command when a message is received
