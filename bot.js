@@ -87,9 +87,10 @@ client.on('guildMemberAdd', member => {
       const embedm = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(`Welcome to the pepe planet development server`)
-        .setDescription(`Welcome ! This is the server where we will stress test the bots before we release them to the public, Type \`-verify\` in <#737028828584476702> to get started!`)
+        .setDescription(`Welcome ! This is the server where we will stress test the bots before we release them to the public`)
         .setThumbnail('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/waving-hand-sign_1f44b.png')
         .setFooter('Pepe planet Development');
+    member.send('Type \`-verify\` in <#737028828584476702> to get started!');
    member.send(embedm);
 });
 // Main status 
