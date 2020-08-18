@@ -90,7 +90,7 @@ client.on('guildMemberAdd', member => {
         .setDescription(`Welcome ! This is the server where we will stress test the bots for pepe planet and more before we release them to the public`)
         .setThumbnail('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/waving-hand-sign_1f44b.png')
         .setFooter('Join pepe planet: https://discord.gg/pnu532B');
-   member.send('Type \`-verify\` in <#737028828584476702> to get started!', + embedm);
+   member.send('Type \`-verify\` in <#737028828584476702> to get started!', embedm);
     console.log(` ${member} has joined the testing server`);
 });
 // Main status 
