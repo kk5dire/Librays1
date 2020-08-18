@@ -9,9 +9,9 @@ module.exports = {
     async errorMessage(message, err) {
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle('<a:NO:737449203726549122>  Error')
+        .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action')
         .setDescription(`${err}`)
-        .setFooter('https://dsc.bio/kk5dire');
+        .setFooter('https://www.youtube.com/watch?v=5BZLz21ZS_Y');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 10000});
         if(message.channel.type == 'text') message.delete({timeout: 10000});
