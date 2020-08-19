@@ -2,10 +2,10 @@ const Discord = require('discord.js');
 const tools = require('../tools');
 
 module.exports = {
-    name: 'die',
-    aliases: ['d'],
-    description: 'kill the bot',
-    usage: '-die',
+    name: 'restart',
+    aliases: ['re'],
+    description: 'restart the bot',
+    usage: '-restart',
     nsfw: false,
     image: false,
     args: false,
