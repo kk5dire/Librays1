@@ -3,7 +3,7 @@ const tools = require('../tools');
 
 module.exports = {
     name: 'restart',
-    aliases: ['r'],
+    aliases: ['d'],
     description: 'restart the bot',
     usage: '-restart',
     nsfw: false,
