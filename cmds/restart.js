@@ -19,7 +19,8 @@ module.exports = {
         .setDescription(`<:AYS_info:737448988437118977> The Bot is currently restarting , stand by`)
    member.send(embed);
     console.log(`restating the bot via/cmd`);
-process.exit();
+            setTimeout(() => {  process.exit(); }, 2000);
+
         } catch (err) {
             return tools.errorMessage(message, err);
         }
