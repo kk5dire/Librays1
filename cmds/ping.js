@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const tools = require('../tools');
-
+const client = new Discord.Client();
 
 module.exports = {
     name: 'ping',
     aliases: ['pong'],
     description: "Check the connection ping to Discord's servers",
     cooldown: 5,
-    async execute(client, message, args) {
+    async execute(message, args) {
         try {
             const messageSendStart = Number(new Date());
             const reply = await message.channel.send(":alarm_clock:   Checking ping... `message.edit`")
