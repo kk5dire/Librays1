@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const tools = require('../tools');
+const client = new Discord.Client();
 
 module.exports = {
     name: 'ping',
