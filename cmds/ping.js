@@ -21,7 +21,7 @@ module.exports = {
             const messageReactStart = Number(new Date());
             await reply.react('✅')
             const messageReactPing = Number(new Date()) - messageReactStart;
-
+            reply.edit(":alarm_clock:  > Checking ping... `Collecting Data`")
             const messageDeleteStart = Number(new Date());
             await reply.delete();
             const messageDeletePing = Number(new Date()) - messageDeleteStart;
