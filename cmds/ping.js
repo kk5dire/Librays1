@@ -10,14 +10,14 @@ module.exports = {
     async execute(message, args) {
         try {
             const messageSendStart = Number(new Date());
-            const reply = await message.channel.send(":alarm_clock:   Checking ping... `message.edit`")
+            const reply = await message.channel.send(":alarm_clock:   Checking ping... `editing messages`")
             const messageSendPing = Number(new Date()) - messageSendStart;
 
             const messageEditStart = Number(new Date());
-            await reply.edit(":alarm_clock:   Checking ping... `message.delete`")
+            await reply.edit(":alarm_clock:   Checking ping... `deleting messages`")
             const messageEditPing = Number(new Date()) - messageEditStart;
 
-            reply.edit(":alarm_clock:  > Checking ping... `message.react`")
+            reply.edit(":alarm_clock:  > Checking ping... `reacting to messages`")
             const messageReactStart = Number(new Date());
             await reply.react('✅')
             const messageReactPing = Number(new Date()) - messageReactStart;
