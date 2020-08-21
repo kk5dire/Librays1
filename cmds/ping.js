@@ -29,7 +29,7 @@ module.exports = {
             const websocketPing = Math.round(client.ping)
             const embed = tools.makeEmbed(':alarm_clock:   Ping statisitics', `Send ${messageSendPing} ms\n`+
             ` Edit: ${messageEditPing} ms\nReact: ${messageReactPing} ms\nDelete: ${messageDeletePing} ms\nWebsocket ping: ${websocketPing} ms\n`+
-            `\n\nTotal : ${messageSendPing+messageEditPing+messageReactPing+messageDeletePing} ms\n`, null, message.channel );
+            `\n---------------------------\nTotal : ${messageSendPing+messageEditPing+messageReactPing+messageDeletePing} ms\n`, null, message.channel );
         } catch (err) {
             return tools.errorMessage(message, err);
         }
