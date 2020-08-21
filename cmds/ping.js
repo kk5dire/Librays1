@@ -23,6 +23,7 @@ module.exports = {
             const messageReactPing = Number(new Date()) - messageReactStart;
             reply.edit(":alarm_clock:  > Checking ping... `Collecting Data`")
             const messageDeleteStart = Number(new Date());
+             reply.edit(":alarm_clock:  > Checking ping... `almost done`")
             await reply.delete();
             const messageDeletePing = Number(new Date()) - messageDeleteStart;
             const websocketPing = Math.round(client.ping)
