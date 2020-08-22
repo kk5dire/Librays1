@@ -4,8 +4,8 @@ const tools = require('../tools');
 module.exports = {
     name: 'timer',
     aliases: ['t'],
-    description: 'create a timer for the set ammount of time',
-    usage: '-timer 10s',
+    description: 'create a timer for the set ammount of time (in ms)',
+    usage: '-timer 60000',
     nsfw: false,
     image: false,
     args: true,
@@ -15,9 +15,9 @@ module.exports = {
     maxArgs: 1,
     async execute(message, args) {
         try {
- const reply = await message.channel.send(':AYS_info:  Timer set!');
+ const reply = await message.channel.send('<:AYS_info:737448988437118977>  Timer set!');
       setTimeout(() => {    reply.edit(":alarm_clock: The Timer is up")
-      message.author.send('your timer is up!') }, args);
+      message.author.send(`${message.author} your timer for \`${args}\` is up!`) }, args);
         } catch (err) {
             return tools.errorMessage(message, err);
         }
