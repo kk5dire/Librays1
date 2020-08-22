@@ -5,7 +5,7 @@ module.exports = {
     name: 'timer',
     aliases: ['t'],
     description: 'create a timer for the set ammount of time (in ms) \n ⚠️ !!WARNING!! ⚠️ \n This will reset if any update or restart happens while the timer is running',
-    usage: '-timer 60000',
+    usage: '-timer (time in ms)',
     nsfw: false,
     image: false,
     args: true,
