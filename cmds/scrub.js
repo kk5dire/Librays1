@@ -15,7 +15,7 @@ module.exports = {
         try {
  const reply = await message.channel.send(tools.makeEmbed('<a:scrub_pengy:746601696691617802> Scrubbing the code...'));
  console.log("scrubbing data");
-      setTimeout(() => {    reply.edit(tools.makeEmbed('<a:check:740915640063492219> Code Scrubbed and clean')) }, 6000);
+      setTimeout(() => {    reply.edit(tools.makeEmbed('<a:check:740915640063492219> Code Scrubbed and clean')) }, 9000);
       console.log("Data scrub complete");
         } catch (err) {
             return tools.errorMessage(message, err);
