@@ -15,9 +15,9 @@ module.exports = {
     maxArgs: 1,
     async execute(message, args) {
         try {
- const reply = await message.channel.send('<:AYS_info:737448988437118977>  Timer set!');
-      setTimeout(() => {    reply.edit(":alarm_clock: The Timer is up")
-      message.author.send(`${message.author} your timer for \`${args}\` is up!`) }, args);
+ const reply = await message.channel.send(tools.makeEmbed('<:AYS_info:737448988437118977>  Timer set!'));
+      setTimeout(() => {    reply.edit(tools.makeEmbed(':alarm_clock: The Timer is up'))
+      message.author.send(`${message.author} your timer for \`${args}\`ms is up!`) }, args);
         } catch (err) {
             return tools.errorMessage(message, err);
         }
