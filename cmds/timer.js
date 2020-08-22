@@ -4,7 +4,7 @@ const tools = require('../tools');
 module.exports = {
     name: 'timer',
     aliases: ['t'],
-    description: 'create a timer for the set ammount of time (in ms)',
+    description: 'create a timer for the set ammount of time (in ms) \n :warning: `WARNING!! | This will reset if any update or restart happens while the timer is running`',
     usage: '-timer 60000',
     nsfw: false,
     image: false,
