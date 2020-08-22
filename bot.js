@@ -54,7 +54,7 @@ const handleCommand = (message) => {
     
     //if the command isn't found or its requirements aren't met, exit
     if (!command) return;
-    if (command.ownerOnly && message.author.id !== '730617433563463782') return tools.errorMessage(message, 'this command is set to bot owner only');
+    if (command.ownerOnly && message.author.id !== '686039988605026304') return tools.errorMessage(message, 'this command is set to bot owner only');
     if (command.guildOnly && message.channel.type !== 'text') return tools.errorMessage(message, 'this command is set to server only');
     if (command.nsfw && message.channel.type == 'text' && !message.channel.nsfw) return tools.errorMessage(message, 'this command is set to nsfw channel only');
     if (command.requires && !message.member.permissions.has(command.requires)) return tools.errorMessage(message, `this command requires the ${command.requires} permission`);
