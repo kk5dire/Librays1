@@ -130,16 +130,20 @@ client.on('messageDelete', async message => {
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
 });
   //use a mentioned channel, or the current one if none were mentioned
-          client.on('messageUpdate', async message => {
-            //find an edited message, send an error if none were found
-            const editedMsg = message.client.lastEdits.get('736595341847298158');
+          client.editSnipeMap = new Map();
 
-            //create an embed with the message content
+client.on('messageUpdate', (oldMessage, newMessage) => {
+    client.editSnipeMap.set('736595341847298158', {
+        author: newMessage.author.tag,
+        oldContent: oldMessage.content,
+        newContent: newMessage.content
+    })
+            const sniped = message.client.editSnipeMap.get(736595341847298158);
             const embed = tools.makeEmbed(`${editedMsg.author} said:`, '')
-            .addField('Old Message', '\u200b'+editedMsg.oldContent)
-            .addField('New Message', '\u200b'+editedMsg.newContent);
+           .addField('Old Message', '\u200b' + sniped.oldContent)
+           .addField('New Message', '\u200b' + sniped.newContent);
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
-		    });
+            });
         
 // Main status 
   client.on('ready', () => {
