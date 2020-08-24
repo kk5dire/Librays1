@@ -95,7 +95,7 @@ client.on('guildMemberAdd', member => {
 });
 
 // when message deleted
-     const channel = client.channels.cache.get('736595341847298158')
+ 
             
 client.on('messageDelete', async message => {
 	// ignore direct messages
@@ -123,12 +123,12 @@ client.on('messageDelete', async message => {
 		client.channels.cache.get('743407385749487617').send(`A message by ${message.author.tag} was deleted, but we don't know by who.`);
 	}
 	//find an edited message, send an error if none were found
-            const delMsg = message.client.lastDel.get(channel.id);
+            const delMsg = message.client.lastDel.get('736595341847298158');
             if (delMsg === undefined) throw 'no message found';
             //send an embed with the message content
             const embed = tools.makeEmbed(`${delMsg.author} said:`, delMsg.content);
             if (delMsg.attachments.size) embed.addField('Attachment', delMsg.attachments.first().url);
-            tools.sendEmbed(message.channel, embed);
+            tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
 });
 // Main status 
   client.on('ready', () => {
