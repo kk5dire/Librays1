@@ -93,7 +93,7 @@ client.on('guildMemberAdd', member => {
    member.send('Type \`-verify\` in <#737028828584476702> to get started!', embedm);
     console.log(` ${member} has joined the testing server`);
 });
-const channel = '743407385749487617'
+
 // when message deleted
 client.on('messageDelete', async message => {
 	// ignore direct messages
@@ -106,7 +106,7 @@ client.on('messageDelete', async message => {
 	const deletionLog = fetchedLogs.entries.first();
 
 	// Let's perform a coherence check here and make sure we got *something*
-	if (!deletionLog) return channel.send(`A message by ${message.author.tag} was deleted, but no relevant audit logs were found.`);
+	if (!deletionLog) return  client.channels.cache.get('743407385749487617').send('Hello here!')(`A message by ${message.author.tag} was deleted, but no relevant audit logs were found.`);
 
 	// We now grab the user object of the person who deleted the message
 	// Let us also grab the target of this action to double check things
@@ -116,9 +116,9 @@ client.on('messageDelete', async message => {
 	// And now we can update our output with a bit more information
 	// We will also run a check to make sure the log we got was for the same author's message
 	if (target.id === message.author.id) {
-		channel.send(`A message by ${message.author.tag} was deleted by ${executor.tag}.`);
+		client.channels.cache.get('743407385749487617').send(`A message by ${message.author.tag} was deleted by ${executor.tag}.`);
 	}	else {
-		channel.send(`A message by ${message.author.tag} was deleted, but we don't know by who.`);
+		client.channels.cache.get('743407385749487617').send(`A message by ${message.author.tag} was deleted, but we don't know by who.`);
 	}
 });
 // Main status 
