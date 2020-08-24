@@ -130,9 +130,9 @@ client.on('messageDelete', async message => {
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
 });
   //use a mentioned channel, or the current one if none were mentioned
-      client.editSnipeMap = new Map();
+     client.editSnipeMap = new Map();
 
-client.on('messageUpdate', (oldMessage, newMessage), client, message, => {
+client.on('messageUpdate', (oldMessage, newMessage, client, message) => {
     client.editSnipeMap.set('736595341847298158', {
         author: newMessage.author.tag,
         oldContent: oldMessage.content,
