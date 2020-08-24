@@ -141,6 +141,8 @@ client.on('messageDelete', async message => {
             .addField('Old Message', '\u200b'+editedMsg.oldContent)
             .addField('New Message', '\u200b'+editedMsg.newContent);
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
+		   } catch (err) {
+    console.error(error);
 	  });
 // Main status 
   client.on('ready', () => {
