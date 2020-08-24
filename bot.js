@@ -134,16 +134,14 @@ client.on('messageDelete', async message => {
           client.on('messageUpdate', async message => {
             //find an edited message, send an error if none were found
             const editedMsg = message.client.lastEdits.get('736595341847298158');
-            if (editedMsg === undefined) throw 'no message found';
+            if (editedMsg === undefined) console.log('no message');
 
             //create an embed with the message content
             const embed = tools.makeEmbed(`${editedMsg.author} said:`, '')
             .addField('Old Message', '\u200b'+editedMsg.oldContent)
             .addField('New Message', '\u200b'+editedMsg.newContent);
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
-		    }).catch(err => {
-        return tools.errorMessage(message, err);
-        })
+		    });
         
 // Main status 
   client.on('ready', () => {
