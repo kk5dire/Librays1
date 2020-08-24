@@ -131,7 +131,7 @@ client.on('messageDelete', async message => {
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
 });
   //use a mentioned channel, or the current one if none were mentioned
-          client.on('messageEdit', async message => {
+          client.on('messageUpdate', async message => {
             //find an edited message, send an error if none were found
             const editedMsg = message.client.lastEdits.get('736595341847298158');
             if (editedMsg === undefined) throw 'no message found';
