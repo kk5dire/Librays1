@@ -143,7 +143,7 @@ client.on('messageDelete', async message => {
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
 		    }).catch(err => {
         return tools.errorMessage(message, err);
-        }
+        })
         
 // Main status 
   client.on('ready', () => {
