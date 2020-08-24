@@ -95,7 +95,7 @@ client.on('guildMemberAdd', member => {
 });
 
 // when message deleted
-     const channel = message.channel;
+     const channel = client.channels.cache.get('736595341847298158')
             
 client.on('messageDelete', async message => {
 	// ignore direct messages
