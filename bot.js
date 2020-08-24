@@ -130,7 +130,7 @@ client.on('messageDelete', async message => {
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
 });
   //use a mentioned channel, or the current one if none were mentioned
-     client.editSnipeMap = new Map();
+     /*client.editSnipeMap = new Map();
 
 client.on('messageUpdate', (oldMessage, newMessage, client, message) => {
     client.editSnipeMap.set('736595341847298158', {
@@ -144,7 +144,7 @@ client.on('messageUpdate', (oldMessage, newMessage, client, message) => {
            .addField('New Message', '\u200b' + sniped.newContent);
             tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
             });
-        
+        */
 // Main status 
   client.on('ready', () => {
     setInterval(() => {
