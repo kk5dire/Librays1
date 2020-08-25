@@ -5,7 +5,7 @@ module.exports = {
     name: 'andres',
     aliases: ["andrew"],
     description: 'who is andres?',
-    usage: '-andres',
+    usage: '',
     nsfw: false,
     image: false,
     args: false,
