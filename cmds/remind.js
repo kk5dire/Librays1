@@ -12,7 +12,6 @@ module.exports = {
     guildOnly: false,
     ownerOnly: false,
     minArgs: 2,
-    maxArgs: 2,
     async execute(message, args) {
         try {
  const reply = await message.channel.send(tools.makeEmbed('<:AYS_info:737448988437118977>  Reminder set!'));
