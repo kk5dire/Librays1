@@ -3,7 +3,7 @@ const tools = require('../tools');
 
 module.exports = {
     name: 'andres',
-    aliases: ["andrew],
+    aliases: ["andrew"],
     description: 'who is andres?',
     usage: '-andres',
     nsfw: false,
