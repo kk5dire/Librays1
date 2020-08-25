@@ -33,7 +33,7 @@ module.exports = {
                 if (!command) throw "command not found";
                 embed.setColor(0x7289DA)
             .setTitle(`:information_source:  Command ${command.name}`)
-                .setDescription(`[Command source](https://github.com/kk5dire/iyBot-Librarys/tree/master/cmds/${command.name}.js) [HerokuLogs](https://dashboard.heroku.com/apps/iybot-librarys-backup/logs)\`\`\`${command.description}\n`+
+                .setDescription(`[Command source](https://github.com/kk5dire/iyBot-Librarys/tree/master/cmds/${command.name}.js) | [HerokuLogs](https://dashboard.heroku.com/apps/iybot-librarys-backup/logs)\`\`\`${command.description}\n`+
                 (command.usage ? `   Usage: ${command.name} ${command.usage}\n` : `   Usage: ${command.name}\n`)+
                 (command.aliases ? ` Aliases: ${command.aliases.join(', ')}\n` : '')+
                 `Cooldown: ${command.cooldown || 2} sec\`\`\``)
