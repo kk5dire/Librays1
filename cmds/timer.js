@@ -20,7 +20,7 @@ module.exports = {
       setTimeout(() => {    reply.edit(tools.makeEmbed('<a:timerend:747784369778851921> The Timer is up'))
       message.channel.send(`${message.author} your timer for \`${args} ms\` is up!`)
       message.author.send(`The timer you set for \`${args} ms\` is up!`) }, args);
-            console.log(`the timer set by ${message.author} for ${args} is up);
+            console.log(`the timer set by ${message.author} for ${args} is up`);
         } catch (err) {
             return tools.errorMessage(message, err);
         }
