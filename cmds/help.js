@@ -15,6 +15,15 @@ module.exports = {
                 target = message.channel;
             } else {
                 target = message.author;
+                
+            }
+            // checks is +log is added and if so sends to the log channel
+            let logg;
+              if (args[0] == '+log') {
+                args.shift();
+                target = client.channels.cache.get('743407385749487617');
+            } else {
+                return;
             }
             
             const embed = new Discord.MessageEmbed();
