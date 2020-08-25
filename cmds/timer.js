@@ -16,9 +16,11 @@ module.exports = {
     async execute(message, args) {
         try {
  const reply = await message.channel.send(tools.makeEmbed('<:AYS_info:737448988437118977>  Timer set!'));
+            console.log(`a timer has been started for ${args} by ${message.author}`);
       setTimeout(() => {    reply.edit(tools.makeEmbed('<a:timerend:747784369778851921> The Timer is up'))
       message.channel.send(`${message.author} your timer for \`${args} ms\` is up!`)
       message.author.send(`The timer you set for \`${args} ms\` is up!`) }, args);
+            console.log(`the timer set by ${message.author} for ${args} is up);
         } catch (err) {
             return tools.errorMessage(message, err);
         }
