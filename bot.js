@@ -86,7 +86,7 @@ const handleCommand = (message) => {
 client.on('guildMemberAdd', member => {
       const embedm = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle(`Welcome to the pepe planet development server`)
+        .setTitle(`<:join:739933481626501151> Welcome to the pepe planet development server`)
         .setDescription(`Welcome ${member}! This is the server where we will stress test the bots for pepe planet and more before we release them to the public`)
         .setThumbnail('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/waving-hand-sign_1f44b.png')
         .setFooter('Join pepe planet: https://discord.gg/pnu532B');
