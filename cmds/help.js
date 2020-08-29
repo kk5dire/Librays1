@@ -22,7 +22,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed();
             //if no command was given, show every command in a list
             if (!args.length) {
-                const mapFunction = command => `\`${command.name}\`   ${command.description} ${command.nsfw ? '\\🔞 ' : ''}${command.ownerOnly ? '\\<:ShieldWarning:746952447095996467> ' : ''}${command.image ? '\\<a:YikesTM:749142822342492213> ' : ''}`;
+                const mapFunction = command => `\`${command.name}\`   ${command.description} ${command.nsfw ? '\\🔞 ' : ''}${command.ownerOnly ? '\\ <:ShieldWarning:746952447095996467> ' : ''}${command.image ? '\\ <a:YikesTM:749142822342492213> ' : ''}`;
                 embed.setColor(0x7289DA)
                 .setTitle('<:help:737449040652009542> Commands')
                 .setDescription(message.client.commands.map(mapFunction).join('\n'))
