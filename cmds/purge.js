@@ -15,8 +15,8 @@ module.exports = {
             //delete the messages, +1 to include the command message
             await message.channel.bulkDelete(msgs);
             //send a confirmation and delete it after 3 seconds
-            const embed = tools.makeEmbed('<a:check:740915640063492219>  Success', `removed ${args[0]} messages`)
-            tools.sendEmbed(message.channel, embed).then(msg => {
+            const embed = 
+            message.channel.send('> <a:check:740915640063492219>  Success', `removed ${args[0]} messages`).then(msg => {
                 msg.delete({timeout: 3000});
             });
         } catch (err) {
