@@ -4,7 +4,7 @@ const tools = require('../tools');
 module.exports = {
     name: 'numberrand',
     aliases: ['num'],
-    description: 'returns a random number -1 of the number provided',
+    description: 'returns a random number from 1 to the number provided',
     usage: 'number',
     nsfw: false,
     image: false,
@@ -16,7 +16,7 @@ module.exports = {
     maxArgs: 1,
     async execute(message, args) {
         try {
-message.channel.send(`<a:ComfySip:749200034846736394> ${message.author} I choose`, tools.makeEmbed(Math.floor(Math.random() * args)));
+message.channel.send(`<a:ComfySip:749200034846736394> ${message.author} I choose`, tools.makeEmbed(Math.floor(Math.random() * args) + 1));
         } catch (err) {
             return tools.errorMessage(message, err);
         }
