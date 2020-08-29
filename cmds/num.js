@@ -16,7 +16,12 @@ module.exports = {
     maxArgs: 1,
     async execute(message, args) {
         try {
-message.channel.send(`<a:ComfySip:749200034846736394> ${message.author.username} I choose `,Math.floor(Math.random() * args) + 1);
+            const embedm = new Discord.MessageEmbed()
+        .setColor(0x7289DA)
+        .setTitle(`<a:ComfySip:749200034846736394> ${message.author.username} I choose...`)
+        .setDescription(Math.floor(Math.random() * args) + 1)
+        .setFooter('https://dsc.bio/kk5dire');
+   message.channel.send(embedm);
         } catch (err) {
             return tools.errorMessage(message, err);
         }
