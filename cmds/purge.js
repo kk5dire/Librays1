@@ -1,6 +1,7 @@
 const tools = require('../tools');
 module.exports = {
-    name: 'purge',
+    name: 'remove',
+    aliases: ['rm'],
     description: 'Removes many messages at once',
     usage: '<num of msgs>',
     args: true,
