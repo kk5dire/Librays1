@@ -47,7 +47,7 @@ module.exports = {
                  const embed = tools.makeEmbed(':incoming_envelope:   I sent you a DM with info', 'Use the `+print` tag to send to this channel instead!');
                 tools.sendEmbed(message.channel, embed);
             }).catch((error) => {
-                throw `can't send DM, do you have DMs disabled?\n${error}`;
+                throw `Error sending DM\n${error}`;
             });
         } catch (err) {
             return tools.errorMessage(message, err);
