@@ -16,7 +16,7 @@ module.exports = {
     maxArgs: 1,
     async execute(message, args) {
         try {
-message.channel.send(tools.makeEmbed(Math.floor(Math.random() * args)));
+message.channel.send(tools.makeEmbed(`${message.author} I choose `, Math.floor(Math.random() * args), '<a:ComfySip:749200034846736394>'));
         } catch (err) {
             return tools.errorMessage(message, err);
         }
