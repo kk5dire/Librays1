@@ -44,7 +44,7 @@ module.exports = {
             tools.sendEmbed(target, embed).then(() => {
                 //if the user needs to check DMs, send a confirmation
                 if (target == message.channel || message.channel.type == 'dm') return;
-                 const embed = tools.makeEmbed(':incoming_envelope:   DM sent!', 'Use +print to send to this channel instead.');
+                 const embed = tools.makeEmbed(':incoming_envelope:   I sent you a DM with info', 'Use the `+print` tag to send to this channel instead!');
                 tools.sendEmbed(message.channel, embed);
             }).catch((error) => {
                 throw `can't send DM, do you have DMs disabled?\n${error}`;
