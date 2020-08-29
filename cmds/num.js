@@ -11,7 +11,7 @@ module.exports = {
     args: true,
     guildOnly: false,
     ownerOnly: false,
-    cooldown: 5,
+    cooldown: 2,
     minArgs: 1,
     maxArgs: 1,
     async execute(message, args) {
