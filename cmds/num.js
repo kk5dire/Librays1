@@ -19,8 +19,8 @@ module.exports = {
             const rand = Math.floor(Math.random() * args) + 1
             const embedm = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle(`<a:ComfySip:749200034846736394> ${message.author.username} I choose... ${rand}`)
-        .setDescription('embed_decription_demo')
+        .setTitle('embed_title_demo')
+        .setDescription(`<a:ComfySip:749200034846736394> ${message.author.username} I choose... ${rand}`)
         .setFooter('https://dsc.bio/kk5dire');
    message.channel.send(embedm);
         } catch (err) {
