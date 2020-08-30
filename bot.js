@@ -25,9 +25,9 @@ for (const file of commandFiles) {
     "hugging iyr",
     "with development work",
     "finding the cutest emotes",
-    "i have a nice curve iyy! 🔫",
-    "i have a nice curve iyy! 🔫",
-    "i have a nice curve iyy! 🔫",
+    "i have a nice curve iy!🔫",
+    "i have a nice curve iy!🔫",
+    "i have a nice curve iy!🔫",
     "with experimental features👀"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
