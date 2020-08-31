@@ -11,7 +11,7 @@ module.exports = {
         .setColor(0x7289DA)
         .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action')
         .setDescription(`${err}`)
-        .setFooter('https://www.youtube.com/watch?v=5BZLz21ZS_Y');
+        .setFooter('<:dankmemerflush:749826358401826926> https://www.youtube.com/watch?v=5BZLz21ZS_Y');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 10000});
         if(message.channel.type == 'text') message.delete({timeout: 10000});
@@ -26,12 +26,12 @@ module.exports = {
     makeEmbed(title, desc, footer, channel) {
         if (!title) title = '';
         if (!desc) desc = '';
-        if (!footer) footer = 'https://dsc.bio/kk5dire';
+        if (!footer) footer = '<:dankmemerflush:749826358401826926> https://dsc.bio/kk5dire';
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter('https://dsc.bio/kk5dire');
+        .setFooter('<:dankmemerflush:749826358401826926> https://dsc.bio/kk5dire');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
