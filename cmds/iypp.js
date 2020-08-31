@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const tools = require('../tools');
 
 module.exports = {
-    name: 'iypp `<:dankmemerflush:749826358401826926>``',
+    name: 'iypp',
     aliases: ['ip'],
     description: 'finds the size of iyrs pp',
     usage: '',
@@ -13,7 +13,7 @@ module.exports = {
     ownerOnly: false,
     async execute(message, args) {
         try {
-message.channel.send(tools.makeEmbed("`.`"))
+message.channel.send('<:dankmemerflush:749826358401826926>', tools.makeEmbed("`.`"))
         } catch (err) {
             return tools.errorMessage(message, err);
         }
