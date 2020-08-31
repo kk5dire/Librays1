@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const tools = require('../tools');
 
 module.exports = {
-    name: 'iypp',
+    name: 'iypp <:dankmemerflush:749826358401826926>',
     aliases: ['ip'],
-    description: 'finds the size of iyrs pp ````<:dankmemerflush:749826358401826926>',
+    description: 'finds the size of iyrs pp',
     usage: '',
     nsfw: false,
     image: false,
