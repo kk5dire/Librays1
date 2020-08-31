@@ -9,7 +9,7 @@ module.exports = {
     async errorMessage(message, err) {
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action <:dankmemerflush:749826358401826926>')
+        .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action')
         .setDescription(`${err}`)
         .setFooter('https://www.youtube.com/watch?v=5BZLz21ZS_Y');
         const outMsg = await this.sendEmbed(message.channel, embed);
