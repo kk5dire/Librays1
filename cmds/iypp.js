@@ -13,7 +13,7 @@ module.exports = {
     ownerOnly: false,
     async execute(message, args) {
         try {
-message.channel.send('<:dankmemerflush:749826358401826926>', tools.makeEmbed("`.`"))
+message.channel.send('<:dankmemerflush:749826358401826926> *hot*', tools.makeEmbed("`.`"))
         } catch (err) {
             return tools.errorMessage(message, err);
         }
