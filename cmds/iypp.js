@@ -4,7 +4,7 @@ const tools = require('../tools');
 module.exports = {
     name: 'iypp',
     aliases: ['ip'],
-    description: 'finds the size of iyrs pp',
+    description: 'finds the size of iyrs pp <:dankmemerflush:749826358401826926>',
     usage: '',
     nsfw: false,
     image: false,
