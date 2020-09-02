@@ -14,10 +14,10 @@ module.exports = {
             const messageSendPing = Number(new Date()) - messageSendStart;
 
             const messageEditStart = Number(new Date());
-            await reply.edit(":alarm_clock:   Checking ping... `deleting messages`")
+            await reply.edit(":alarm_clock:   Checking ping... ")
             const messageEditPing = Number(new Date()) - messageEditStart;
 
-            reply.edit(":alarm_clock:  > Checking ping... `reacting to messages`")
+            reply.edit(":alarm_clock:  > Checking ping... ")
             const messageReactStart = Number(new Date());
             await reply.react('✅')
             const messageReactPing = Number(new Date()) - messageReactStart;
@@ -27,7 +27,7 @@ module.exports = {
             await reply.delete();
             const messageDeletePing = Number(new Date()) - messageDeleteStart;
             const websocketPing = Math.round(client.ping)
-            const embed = tools.makeEmbed(':alarm_clock:   Ping statisitics', `Send ${messageSendPing} ms\n`, null, message.channel );
+            const embed = tools.makeEmbed(':alarm_clock:   Ping statisitics', `Send: ${messageSendPing} ms\n`, null, message.channel );
         } catch (err) {
             return tools.errorMessage(message, err);
         }
