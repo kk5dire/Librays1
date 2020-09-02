@@ -3,9 +3,9 @@ const tools = require('../tools');
 const client = new Discord.Client();
 
 module.exports = {
-    name: 'ping',
-    aliases: ['pong'],
-    description: "Check the connection ping to Discord's servers",
+    name: 'tping',
+    aliases: ['tpong'],
+    description: "Check the connection ping to Discord's servers total",
     cooldown: 5,
     async execute(message, args) {
         try {
