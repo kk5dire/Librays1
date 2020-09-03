@@ -78,6 +78,11 @@ const handleCommand = (message) => {
         const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
         if (now < expirationTime) {
             const timeLeft = expirationTime - now;
+		const embede = new Discord.MessageEmbed()
+        .setColor(0x7289DA)
+        .setThumbnail('https://i.ibb.co/db8pVJD/Screenshot-2020-09-02-at-8-50-37-PM.png')
+        .setFooter('Join pepe planet: https://discord.gg/pnu532B');
+       message.channel.send(embede);
             return tools.errorMessage(message, `this command is in cooldown for ${timeLeft} ms`);
         }
     }
