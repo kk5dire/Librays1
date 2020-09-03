@@ -80,7 +80,7 @@ const handleCommand = (message) => {
             const timeLeft = expirationTime - now;
 		const embede = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setImage('https://i.ibb.co/db8pVJD/Screenshot-2020-09-02-at-8-50-37-PM.png')
+        .setImage('https://i.ibb.co/FKhrgfD/Screenshot-2020-09-02-at-8-50-37-PM-01.jpg')
         .setFooter('Join pepe planet: https://discord.gg/pnu532B');
 return message.channel.send(`> <a:NO:737449203726549122> ***\`this command is in cooldown for ${timeLeft} ms\`***`, embede);
             //return tools.errorMessage();
