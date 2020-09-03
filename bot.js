@@ -82,7 +82,8 @@ const handleCommand = (message) => {
         .setColor(0x7289DA)
         .setImage('https://i.ibb.co/db8pVJD/Screenshot-2020-09-02-at-8-50-37-PM.png')
         .setFooter('Join pepe planet: https://discord.gg/pnu532B');
-            return tools.errorMessage(message, `this command is in cooldown for ${timeLeft} ms`, embede);
+		message.channel.send(message, `this command is in cooldown for ${timeLeft} ms`, embede);
+            //return tools.errorMessage();
         }
     }
     
