@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const tools = require('../tools');
+//create a client, the bot itself
+const client = new Discord.Client();
 
 module.exports = {
     name: 'noroundping',
