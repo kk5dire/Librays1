@@ -10,7 +10,7 @@ module.exports = {
     usage: '',
     async execute(message, args) {
         try {
-message.channel.send(tools.makeEmbed(`My Exact ping is: ${client.ping}`));
+message.channel.send(tools.makeEmbed(`My NRP is: ${client.ping}`));
         } catch (err) {
             return tools.errorMessage(message, err);
         }
