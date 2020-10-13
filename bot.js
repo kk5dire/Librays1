@@ -19,18 +19,11 @@ for (const file of commandFiles) {
 }
 // Main status array
  const activities_list = [
-    "-librarys to get started", 
+"All Systems Operational",
+"v89.55",
+    "No Current Projects", 
     "-verify in #entry",
-    "with some code",
-"with aya , having a good time :)",
-    "protecting pepe planet development",
-    "hugging iyr",
-    "with development work",
-    "finding the cutest emotes",
-    "i have a nice curve iy!🔫",
-    "i have a nice curve iy!🔫",
-    "i have a nice curve iy!🔫",
-    "with experimental features👀"
+    "Pepe Planet Development"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 
