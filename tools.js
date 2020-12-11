@@ -26,12 +26,12 @@ module.exports = {
     makeEmbed(title, desc, footer, channel) {
         if (!title) title = '';
         if (!desc) desc = '';
-        if (!footer) footer = 'https://dsc.bio/kk5dire';
+        if (!footer) footer = 'Please note: This bot is no longer updated';
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter('https://dsc.bio/kk5dire');
+        .setFooter('Please note: This bot is no longer being updated');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
