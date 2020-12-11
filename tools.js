@@ -9,9 +9,9 @@ module.exports = {
     async errorMessage(message, err) {
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action')
+        .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action (This is most likely due to thr bot being in an unauthorized server, or a command test')
         .setDescription(`${err}`)
-        .setFooter('https://www.youtube.com/watch?v=5BZLz21ZS_Y');
+        .setFooter('Errot in action');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 10000});
         if(message.channel.type == 'text') message.delete({timeout: 10000});
