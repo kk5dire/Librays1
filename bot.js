@@ -22,8 +22,8 @@ for (const file of commandFiles) {
 "All Systems Operational",
 "v89.55",
     "No Current Projects", 
-    "-verify in #entry",
-    "Pepe Planet Development"
+    "This bot is no longer supported",
+    "This bot is no longer supported"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 
