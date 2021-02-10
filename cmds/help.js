@@ -24,9 +24,15 @@ module.exports = {
             if (!args.length) {
                 const mapFunction = command => `\`${command.name}\`   ${command.description} ${command.nsfw ? '\\command_target_nsfw-only_true ' : ''}${command.ownerOnly ? '\ <:ShieldWarning:746952447095996467> ' : ''}${command.image ? '\ <a:YikesTM:749142822342492213> ' : ''}`;
                 embed.setColor(0x7289DA)
+<<<<<<< HEAD
                 embed.setTitle('<:help:737449040652009542> Commands')
                 embed.setDescription(message.client.commands.map(mapFunction).join('\n'))
                  embed.setFooter('remember this bot is no longer suported!', 'https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-1c8ec529616b79e0-21x18.png');
+=======
+                .setTitle('<:help:737449040652009542> Commands')
+                .setDescription(message.client.commands.map(mapFunction).join('\n'))
+                 .setFooter('hi i am iyLibrarys the storage and moderation bot for the pepe planet dev server!', 'https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-1c8ec529616b79e0-21x18.png');
+>>>>>>> parent of d45cda3 (attempt to fix embed)
             } else {
                 //otherwise show info on one command
                 const name = args[0].toLowerCase();
@@ -34,12 +40,12 @@ module.exports = {
                     message.client.commands.find(c => c.aliases && c.aliases.includes(name));
                 if (!command) throw "command not found";
                 embed.setColor(0x7289DA)
-            embed.setTitle(`<:AYS_info:737448988437118977> | ${command.name} : Command Details`)
-                embed.setDescription(`[Command source](https://github.com/kk5dire/Librarys1/tree/master/cmds/${command.name}.js) | [HerokuLogs](https://dashboard.heroku.com/apps/iybot-librarys-backup/logs)\`\`\`${command.description}\n`+
+            .setTitle(`<:AYS_info:737448988437118977> | ${command.name} : Command Details`)
+                .setDescription(`[Command source](https://github.com/kk5dire/Librarys1/tree/master/cmds/${command.name}.js) | [HerokuLogs](https://dashboard.heroku.com/apps/iybot-librarys-backup/logs)\`\`\`${command.description}\n`+
                 (command.usage ? `   Usage: ${command.name} ${command.usage}\n` : `   Usage: ${command.name}\n`)+
                 (command.aliases ? ` Aliases: ${command.aliases.join(', ')}\n` : '')+
                 `Cooldown: ${command.cooldown || 2} sec\`\`\``)
-                embed.setFooter(new Date().toISOString());
+                .setFooter(new Date().toISOString());
             }
             tools.sendEmbed(target, embed).then(() => {
                 //if the user needs to check DMs, send a confirmation
