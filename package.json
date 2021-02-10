@@ -1,7 +1,7 @@
 {
-  "name": "QuoteTools",
+  "name": "librarys01",
   "version": "2.0.0",
-  "description": "A quick and fun way to make quotes of other users",
+  "description": "",
   "main": "bot.js",
   "dependencies": {
     "canvas": "^2.6.1",
@@ -21,10 +21,10 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kk5dire/e"
+    "url": "https://github.com/kk5dire/librarys1"
   },
   "bugs": {
-    "url": "https://github.com/kk5dire/e/issues"
+    "url": "https://github.com/kk5dire/librarys1/issues"
   },
-  "homepage": "https://github.com/kk5dire/e"
+  "homepage": "https://github.com/kk5dire/librarys1"
 }
