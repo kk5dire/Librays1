@@ -1,4 +1,4 @@
-/* const tools = require('../tools');
+ const tools = require('../tools');
 
 module.exports = {
     name: 'snipe',
@@ -27,4 +27,3 @@ module.exports = {
         }
     },
 };
-*/
