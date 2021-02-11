@@ -3,7 +3,7 @@ const tools = require('../tools');
 
 module.exports = {
     name: '10',
-    aliases: ['iyr-is-lesbian'],
+    aliases: ['ten'],
     description: 'count to 10 testing message.edit',
     usage: '',
     nsfw: false,
