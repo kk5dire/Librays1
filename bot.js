@@ -74,7 +74,7 @@ const handleCommand = (message) => {
 		const embede = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setImage('https://i.ibb.co/FKhrgfD/Screenshot-2020-09-02-at-8-50-37-PM-01.jpg')
-        .setFooter('Join pepe planet: https://discord.gg/pnu532B');
+        .setFooter('Join null: null_link');
 return message.channel.send(`> <a:NO:737449203726549122> ***\`this command is in cooldown for ${timeLeft} ms\`***`, embede);
             //return tools.errorMessage();
         }
@@ -89,10 +89,10 @@ return message.channel.send(`> <a:NO:737449203726549122> ***\`this command is in
 client.on('guildMemberAdd', member => {
       const embedm = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle(`<:join:739933481626501151> Welcome to the pepe planet development server`)
-        .setDescription(`Welcome ${member}! This is the server where we will stress test the bots for pepe planet and more before we release them to the public`)
+        .setTitle(`<:join:739933481626501151> Welcome to the null server`)
+        .setDescription(`Welcome ${member}! This is the server where we will null`)
         .setThumbnail('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/waving-hand-sign_1f44b.png')
-        .setFooter('Join pepe planet: https://discord.gg/pnu532B');
+        .setFooter('Join null: null_link');
    member.send('Type \`-verify\` in <#737028828584476702> to get started!', embedm);
     console.log(` ${member} has joined the testing server`);
 });
