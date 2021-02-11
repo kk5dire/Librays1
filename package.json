@@ -5,10 +5,9 @@
   "main": "bot.js",
   "dependencies": {
     "canvas": "^2.6.1",
-    "discord.js": "github:discordjs/discord.js",
+    "discord.js": "^12.5.0",
     "node-fetch": "^2.6.0"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node bot.js"
   },
