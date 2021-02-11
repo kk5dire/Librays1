@@ -26,9 +26,15 @@ module.exports = {
                 embed.setColor(0x7289DA)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 embed.setTitle('<:help:737449040652009542> Commands')
                 embed.setDescription(message.client.commands.map(mapFunction).join('\n'))
                  embed.setFooter('remember this bot is no longer suported!', 'https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-1c8ec529616b79e0-21x18.png');
+=======
+                .setTitle('<:help:737449040652009542> Commands')
+                .setDescription(message.client.commands.map(mapFunction).join('\n'))
+                 .setFooter('hi i am iyLibrarys the storage and moderation bot for the pepe planet dev server!', 'https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-1c8ec529616b79e0-21x18.png');
+>>>>>>> parent of d45cda3 (attempt to fix embed)
 =======
                 .setTitle('<:help:737449040652009542> Commands')
                 .setDescription(message.client.commands.map(mapFunction).join('\n'))
