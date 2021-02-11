@@ -13,8 +13,8 @@ module.exports = {
         .setDescription(`${err}`)
         .setFooter('This bot is no longer being supported');
         const outMsg = await this.sendEmbed(message.channel, embed);
-        outMsg.delete({timeout: 10000});
-        if(message.channel.type == 'text') message.delete({timeout: 10000});
+        outMsg.delete({timeout: 20000});
+        if(message.channel.type == 'text') message.delete({timeout: 20000});
     },
 
     // Creates an embed template (doesn't send it).

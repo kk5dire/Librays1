@@ -17,7 +17,7 @@ module.exports = {
             //send a confirmation and delete it after 3 seconds
             const embed = 
             message.channel.send(`> <a:check:740915640063492219> **Action Completed** **\`\`\`removed ${args[0]} message(s)\`\`\`**`).then(msg => {
-                msg.delete({timeout: 3000});
+                msg.delete({timeout: 20000});
             });
         } catch (err) {
             return tools.errorMessage(message, err);
