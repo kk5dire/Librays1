@@ -21,10 +21,11 @@ module.exports = {
               target = '811581261893468190';
           } else {
               message.channel.send(tools.errorMessage(message, err));
-              break;
+              return;
           }
         
         // assuming role.id is an actual ID of a valid role:
+        if (target === undefined) throw message.channel.send(tools.errorMessage(message, err));
         if(message.member.roles.cache.has(target)) { // crew role
             console.log(`Yay, the author of the message has the role!`);
           let role = message.guild.roles.cache.get(target); // access role
