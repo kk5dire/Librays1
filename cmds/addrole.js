@@ -32,6 +32,8 @@ module.exports = {
            member.roles.remove(role.id)
           const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , removed the role(s)')
           message.channel.send(embed);
+          embed.delete({timeout: 200000});
+        
           
          
            return;
@@ -42,6 +44,7 @@ module.exports = {
            member.roles.add(role.id)
           const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
           message.channel.send(embed);
+          embed.delete({timeout: 200000});
           
          
           } 
