@@ -19,6 +19,8 @@ module.exports = {
               target = '811581317882970172';
           } else if (args[0] == '+no') {
               target = '811581261893468190';
+          } else if (args[0] == '+all') {
+              target = '811682696181973032'
           } else {
               return;
           }
