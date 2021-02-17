@@ -31,9 +31,9 @@ module.exports = {
           let member = message.member;
            member.roles.remove(role.id)
           const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , removed the role(s)')
-          message.channel.send(embed);
+          message.author.send(embed);
           embed.delete({timeout: 200000});
-          message.author.bulkDelete(1)({timeout: 200000})
+          message.channel.bulkDelete(1)({timeout: 200000})
         
           
          
@@ -44,9 +44,9 @@ module.exports = {
           let member = message.member;
            member.roles.add(role.id)
           const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
-          message.channel.send(embed);
+          message.author.send(embed);
           embed.delete({timeout: 200000});
-          message.author.bulkDelete(1)({timeout: 200000})
+          message.channel.bulkDelete(1)({timeout: 200000})
           
          
           } 
