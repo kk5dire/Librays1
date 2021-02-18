@@ -24,7 +24,8 @@ module.exports = {
           } else if (args[0] == '+chat') {
               target = '811683773162586162'
           } else {
-              return;
+              message.channel.bulkDelete(1)({timeout: 200000})
+              return
           }
         
         // assuming role.id is an actual ID of a valid role:
