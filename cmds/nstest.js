@@ -16,7 +16,7 @@ module.exports = {
             function image(msg) {
 
                 var options = {
-                    url: "http://results.dogpile.com/serp?qc=images&q=" + "Cute Cat Images",
+                    url: "http://results.dogpile.com/serp?qc=images&q=" + args,
                     method: "GET",
                     headers: {
                         "Accept": "text/html",
