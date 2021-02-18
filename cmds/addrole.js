@@ -21,6 +21,8 @@ module.exports = {
               target = '811581261893468190';
           } else if (args[0] == '+all') {
               target = '811682696181973032'
+          } else if (args[0] == '+chat') {
+              target = '811683773162586162'
           } else {
               return;
           }
