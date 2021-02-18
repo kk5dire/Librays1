@@ -16,11 +16,6 @@ module.exports = {
     async execute(message, args, request, cheerio) {
         try {
        
-            switch(args[0]) {
-                case "nsfw": 
-                image(message);
-                break
-            }
          
          
          function image(message) {

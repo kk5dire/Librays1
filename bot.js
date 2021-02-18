@@ -100,54 +100,7 @@ client.on('guildMemberAdd', member => {
 // when message deleted
  
             
-client.on('messageDelete', async message => {
-	// ignore direct messages
-	if (!message.guild) return;
-	const fetchedLogs = await message.guild.fetchAuditLogs({
-		limit: 1,
-		type: 'MESSAGE_DELETE',
-	});
-	// Since we only have 1 audit log entry in this collection, we can simply grab the first one
-	const deletionLog = fetchedLogs.entries.first();
 
-	// Let's perform a coherence check here and make sure we got *something*
-	if (!deletionLog) return  client.channels.cache.get('743407385749487617').send('Hello here!')(`A message by ${message.author.tag} was deleted, but no relevant audit logs were found.`);
-
-	// We now grab the user object of the person who deleted the message
-	// Let us also grab the target of this action to double check things
-	const { executor, target } = deletionLog;
-
-
-	// And now we can update our output with a bit more information
-	// We will also run a check to make sure the log we got was for the same author's message
-	if (target.id === message.author.id) {
-		client.channels.cache.get('743407385749487617').send(`A message by ${message.author.tag} was deleted by ${executor.tag}.`);
-	}	else {
-		client.channels.cache.get('743407385749487617').send(`A message by ${message.author.tag} was deleted, but we don't know by who.`);
-	}
-	//find an edited message, send an error if none were found
-            const delMsg = message.client.lastDel.get('736595341847298158');
-            //send an embed with the message content
-            const embed = tools.makeEmbed(`${delMsg.author} said:`, delMsg.content);
-            if (delMsg.attachments.size) embed.addField('Attachment', delMsg.attachments.first().url);
-            tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
-});
-  //use a mentioned channel, or the current one if none were mentioned
-     /*client.editSnipeMap = new Map();
-
-client.on('messageUpdate', (oldMessage, newMessage, client, message) => {
-    client.editSnipeMap.set('736595341847298158', {
-        author: newMessage.author.tag,
-        oldContent: oldMessage.content,
-        newContent: newMessage.content
-    })
-            const sniped = message.client.editSnipeMap.get(736595341847298158);
-            const embed = tools.makeEmbed(`${editedMsg.author} said:`, '')
-           .addField('Old Message', '\u200b' + sniped.oldContent)
-           .addField('New Message', '\u200b' + sniped.newContent);
-            tools.sendEmbed(client.channels.cache.get('743407385749487617'), embed);
-            });
-        */
 // Main status 
   client.on('ready', () => {
     setInterval(() => {
