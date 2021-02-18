@@ -25,7 +25,7 @@ module.exports = {
                 };
             
                 request(options, function (error, response, responseBody) {
-                    if (error) {
+                    if (err) {
                         return;
                     }
             
@@ -44,7 +44,7 @@ module.exports = {
                     }
             
                     //send request
-                    msg.channel.send(urls[Math.floor(Math.random() * urls.length)]);
+                    message.channel.send(urls[Math.floor(Math.random() * urls.length)]);
             
                 });
             }
