@@ -5,8 +5,10 @@
   "main": "bot.js",
   "dependencies": {
     "canvas": "^2.6.1",
+    "cheerio": "^1.0.0-rc.5",
     "discord.js": "^12.5.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2"
   },
   "scripts": {
     "start": "node bot.js"
