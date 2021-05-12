@@ -12,19 +12,19 @@ module.exports = {
     guildOnly: false,
     ownerOnly: false,
        async execute(message, args) {
-        try {
+         try {
             let target;
-            if (args[0] == '+lib') {
+            if (args[0] == '+1') {
               args.shift();
-              target = '811581317882970172';
-          } else if (args[0] == '+no') {
-              target = '811581261893468190';
-          } else if (args[0] == '+all') {
-              target = '811682696181973032'
-          } else if (args[0] == '+chat') {
-              target = '811683773162586162'
+              target = '842174512690888705';
+          } else if (args[0] == '+2') {
+              target = '842174512690888705';
+          } else if (args[0] == '+3') {
+              target = '842174512690888705'
+          } else if (args[0] == '+4') {
+              target = '842174512690888705'
           } else {
-              message.channel.bulkDelete(1)({timeout: 200000})
+          
               return
           }
         
@@ -35,10 +35,10 @@ module.exports = {
           let role = message.guild.roles.cache.get(target); // access role
           let member = message.member;
            member.roles.remove(role.id)
-          const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , removed the role(s)')
+          const embed = tools.makeEmbed('<:fire2020:812013976116002826> success! , removed the role(s)')
           message.author.send(embed);
-          embed.delete({timeout: 200000});
-          message.channel.bulkDelete(1)({timeout: 200000})
+          
+       
         
           
          
@@ -48,10 +48,9 @@ module.exports = {
           let role = message.guild.roles.cache.get(target); // access role
           let member = message.member;
            member.roles.add(role.id)
-          const embed = tools.makeEmbed('<:AYS_check:737449100009799752> success! , gave you the role(s)')
+          const embed = tools.makeEmbed('<:fire2020:812013976116002826> success! , gave you the role(s)')
           message.author.send(embed);
-          embed.delete({timeout: 200000});
-          message.channel.bulkDelete(1)({timeout: 200000})
+       
           
          
           } 
