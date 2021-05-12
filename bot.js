@@ -1,5 +1,5 @@
 //set login token
-const token = 'NzM2Njk0MzE5NTgyNTQzOTIy.XxyiDA.xSx7sbLgs5hSJOZFNalv91KbiWU'
+const token = 'ODQyMTc1MDg5MjkzMzkzOTQw.YJxerA.eDDov47oAuB9AXgkTkS0dBNQoRI'
 //load required modules
 const fs = require('fs');
 const Discord = require('discord.js');
