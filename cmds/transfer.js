@@ -24,7 +24,7 @@ module.exports = {
           } else if (args[0] == '+4') {
               target = '842174512690888705'
           } else {
-              message.channel.bulkDelete(1)({timeout: 200000})
+          
               return
           }
         
@@ -37,8 +37,8 @@ module.exports = {
            member.roles.remove(role.id)
           const embed = tools.makeEmbed('<:fire2020:812013976116002826> success! , removed the role(s)')
           message.author.send(embed);
-          embed.delete({timeout: 200000});
-          message.channel.bulkDelete(1)({timeout: 200000})
+          
+       
         
           
          
@@ -50,8 +50,7 @@ module.exports = {
            member.roles.add(role.id)
           const embed = tools.makeEmbed('<:fire2020:812013976116002826> success! , gave you the role(s)')
           message.author.send(embed);
-          embed.delete({timeout: 200000});
-          message.channel.bulkDelete(1)({timeout: 200000})
+       
           
          
           } 
