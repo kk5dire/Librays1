@@ -2,6 +2,7 @@
 If your here you stumbled upon a repositry that I am leaving into the public domain
 
 # Current Commands 
+### These are file names for the commands the commands most likely are the filename without '.js' but not guaranteed
 10.js
 
 
