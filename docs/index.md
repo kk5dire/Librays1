@@ -1,6 +1,6 @@
 # Librarys 1 Documentation
 ## Welcome 
-If your here you stumbled upon a repositry that I am leaving into the public domain
+If your here you stumbled upon a repositry that I am leaving into the public domain or are viewing this from another source
 
 # Current Commands 
 ### These are file names for the commands the commands most likely are the filename without '.js' but not guaranteed
@@ -72,3 +72,14 @@ wping.js
 cum.js (meme not nsfw)
 # Public Sandbox Invite Legacy (Prone to change)
 [Right Here](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&scope=bot)
+
+# Other information 
+## Issues and contact
+[Github issues](https://github.com/kk5dire/Librays1)
+[Email me](mailto:contact@anotherkk5dire.web.app&cc=kk5dire@gmail.com)
+### Discord: kk5dire#8452
+## Previous Names
+iyLibrarys, iyTestbeta, Libwin, Ofcc2
+## Suggestions 
+[Form](kk5.page.link/contact)
+[Discord](kk5.page.link/la4)
