@@ -1,11 +1,11 @@
 //set login token
+const AuthDetails = require("./auth.js").getAuthDetails();
 const token = AuthDetails.bot_token;
 //load required modules
 const fs = require('fs');
 const Discord = require('discord.js');
 const tools = require('./tools');
 const { send } = require('process');
-const AuthDetails = require("./auth.js").getAuthDetails();
 //create a client, the bot itself
 const client = new Discord.Client();
 
