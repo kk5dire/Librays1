@@ -70,6 +70,9 @@ verify.js
 wping.js
 
 cum.js (meme not nsfw)
+
+sources.js
+
 # Public Sandbox Invite Legacy (Prone to change)
 [Right Here](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&scope=bot)
 
