@@ -19,7 +19,7 @@ module.exports = {
         .addField("Framework", "GTRXAC [Visit His Github](http://gtrxac.github.io/)", true)
         .addField("Licencing", "GNU [Open](https://github.com/kk5dire/Librays1/blob/master/LICENSE)", true)
         .addField("Language Helpers", "[DJS](http://discordjs.guide/)", true)
-        .addField("la2 Members", "[Invite](https://kk5.page.link/la2", true)
+        .addField("la2 Members", "[Invite](https://kk5.page.link/la2)", true)
         .addField("Other", "Refusal to mention", true)
         .setTimestamp()
         .setFooter("Missing something? let me know!")
