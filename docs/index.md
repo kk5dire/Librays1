@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+# Welcome 
+If your here you stumbled upon a repositry that I am leaving into the public domain
 
-You can use the [editor on GitHub](https://github.com/kk5dire/Librays1/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+# Current Commands 
+10.js
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+addrole.js
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+beautiful.js
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+bugcollect.js
 
-- Bulleted
-- List
+dping.js
 
-1. Numbered
-2. List
+eping.js
 
-**Bold** and _Italic_ and `Code` text
+eval.js
 
-[Link](url) and ![Image](src)
-```
+fping.js
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+game.js
 
-### Jekyll Themes
+giveaway.js
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kk5dire/Librays1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+help.js
 
-### Support or Contact
+inside.js
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+kill.js
+
+maul.js
+
+noroundping.js
+
+num.js
+
+purge.js
+
+reload.js
+
+remind.js
+
+restart.js
+
+rping.js
+
+sayas.js
+
+scale.js
+
+
+Update scrub.js
+
+snipe.js
+
+sping.js
+
+timer.js
+
+tping.js
+
+transfer.js
+
+verify.js
+
+wping.js
+
+# Public Sandbox Invite Legacy (Prone to change)
+[Right Here](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&scope=bot)
