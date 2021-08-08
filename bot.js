@@ -21,9 +21,7 @@ for (const file of commandFiles) {
  const activities_list = [
 "All Systems Operational",
 "v89.55",
-    "No Current Projects", 
-    "-transfer #transfer",
-    "-transfer #transfer"
+    "No Current Projects"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 
