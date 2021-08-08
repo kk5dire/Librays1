@@ -9,9 +9,9 @@ module.exports = {
     async errorMessage(message, err) {
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
-        .setTitle('<a:NO:737449203726549122>  A Error Occured While Doing The Action')
+        .setTitle('<:notlikebean:827055430915719248>  A Error Occured While Doing The Action')
         .setDescription(`${err}`)
-        .setFooter('This bot is no longer being supported');
+        .setFooter('This bot is no longer being activly supported');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 200000});
         if(message.channel.type == 'text') message.delete({timeout: 200000});
@@ -26,12 +26,12 @@ module.exports = {
     makeEmbed(title, desc, footer, channel) {
         if (!title) title = '';
         if (!desc) desc = '';
-        if (!footer) footer = 'Please note: This bot is no longer updated';
+        if (!footer) footer = 'Please note: This bot is no longer activly updated';
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter('Please note: This bot is no longer being updated');
+        .setFooter('Please note: This bot is no longer being activly updated');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
