@@ -20,7 +20,7 @@ for (const file of commandFiles) {
 // Main status array
  const activities_list = [
 "All Systems Operational",
-"v95.67",
+"v95.86",
     "-help for docs"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
