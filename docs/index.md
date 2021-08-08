@@ -81,5 +81,5 @@ cum.js (meme not nsfw)
 ## Previous Names
 iyLibrarys, iyTestbeta, Libwin, Ofcc2
 ## Suggestions 
-[Form](kk5.page.link/contact)
-[Discord](kk5.page.link/la4)
+[Form](https://kk5.page.link/contact)
+[Discord](https://kk5.page.link/la4)
