@@ -13,7 +13,10 @@ module.exports = {
     ownerOnly: false,
     async execute(message, args) {
         try {
-        message.channel.send("https://kk5dire.github.io/Librays1/");
+        const helpbubble = new Discord.MessageEmbed()
+        .setAuthor('Librarys 1 Help Documentation')
+        .setTitle("[Documentation](https://kk5dire.github.io/Librays1/)")
+        message.channel.send(helpbubble)
         } catch (err) {
             return tools.errorMessage(message, err);
         }
