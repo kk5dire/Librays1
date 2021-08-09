@@ -45,8 +45,7 @@ const handleCommand = (message) => {
 
     //find the command from the loaded command files
     const command = client.commands.get(commandName)
-        || client.commands.find(cmd => cmd.name.startsWith(commandName))
-    	.catch(console.log(error))
+        || client.commands.find(cmd => cmd.name.startsWith(commandName)).catch(console.log(error) || message.channel.send(error) || return;)
         || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
     
     //if the command isn't found or its requirements aren't met, exit
