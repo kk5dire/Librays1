@@ -45,11 +45,11 @@ const handleCommand = (message) => {
 
     //find the command from the loaded command files
     const command = client.commands.get(commandName)
-        || if (!command) return;
         || client.commands.find(cmd => cmd.name.startsWith(commandName))
         || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
     
     //if the command isn't found or its requirements aren't met, exit
+    if (!command) return;
     if (command.ownerOnly && message.author.id !== '686039988605026304') return tools.errorMessage(message, 'this command is set to bot owner only');
     if (command.guildOnly && message.channel.type !== 'text') return tools.errorMessage(message, 'this command is set to server only');
     if (command.nsfw && message.channel.type == 'text' && !message.channel.nsfw) return tools.errorMessage(message, 'this command is set to nsfw channel only');
