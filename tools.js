@@ -11,7 +11,7 @@ module.exports = {
         .setColor(0x7289DA)
         .setTitle('<:notlikebean:827055430915719248>  A Error Occured While Doing The Action')
         .setDescription(`${err}`)
-        .setFooter('A Non-Fatal Error occured while doing this command');
+        .setFooter('A Non-Fatal Error occured while doing this command);
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 200000});
         if(message.channel.type == 'text') message.delete({timeout: 200000});
@@ -26,12 +26,12 @@ module.exports = {
     makeEmbed(title, desc, footer, channel) {
         if (!title) title = '';
         if (!desc) desc = '';
-        if (!footer) footer = 'Please note: This bot is no longer activly updated';
+        if (!footer) footer = 'Please note: This bot is depricated ';
         const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter('kk5.page.link/la4');
+        .setFooter('kk5.page.link/la4 • Please note: This bot is depricated');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
