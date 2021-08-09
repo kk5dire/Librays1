@@ -11,7 +11,7 @@ module.exports = {
         .setColor(0x7289DA)
         .setTitle('<:notlikebean:827055430915719248>  A Error Occured While Doing The Action')
         .setDescription(`${err}`)
-        .setFooter('This bot is no longer being activly supported');
+        .setFooter('A Non-Fatal Error occured while doing this command');
         const outMsg = await this.sendEmbed(message.channel, embed);
         outMsg.delete({timeout: 200000});
         if(message.channel.type == 'text') message.delete({timeout: 200000});
@@ -31,7 +31,7 @@ module.exports = {
         .setColor(0x7289DA)
         .setTitle(title)
         .setDescription(desc)
-        .setFooter('Please note: This bot is no longer being activly updated');
+        .setFooter('kk5.page.link/la4');
         if(channel) {channel.send(embed)} else {return embed};
     },
 
