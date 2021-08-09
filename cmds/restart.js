@@ -16,7 +16,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
         .setColor(0x7289DA)
         .setTitle(`Restarting`)
-        .setDescription(`<:AYS_info:737448988437118977> The Bot is currently restarting , stand by`)
+        .setDescription(`<:okmuda:821852023053484092> The Bot is currently restarting , stand by`)
    message.channel.send(embed);
     console.log(`restating the bot via/cmd`);
             setTimeout(() => {  process.exit(); }, 1000);
