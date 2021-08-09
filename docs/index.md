@@ -1,6 +1,7 @@
 # Librarys 1 Documentation
 ## Welcome 
 If your here you stumbled upon a repositry that I am leaving into the public domain or are viewing this from another source
+[![CodeQL](https://github.com/kk5dire/Librays1/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/kk5dire/Librays1/actions/workflows/codeql-analysis.yml)
 
 # Current Commands 
 
