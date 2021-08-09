@@ -3,75 +3,73 @@
 If your here you stumbled upon a repositry that I am leaving into the public domain or are viewing this from another source
 
 # Current Commands 
-### These are file names for the commands the commands most likely are the filename without '.js' but not guaranteed
-10.js
 
 
-addrole.js
+role
 
-beautiful.js
-
-
-bugcollect.js
-
-dping.js
-
-eping.js
-
-eval.js
-
-fping.js
-
-game.js
-
-giveaway.js
-
-help.js
-
-inside.js
-
-kill.js
-
-maul.js
-
-noroundping.js
-
-num.js
-
-purge.js
-
-reload.js
-
-remind.js
-
-restart.js
-
-rping.js
-
-sayas.js
-
-scale.js
+beautiful
 
 
-Update scrub.js
+bugcollect
 
-snipe.js
+dping
 
-sping.js
+eping
 
-timer.js
+eval
 
-tping.js
+fping
 
-transfer.js
+game
 
-verify.js
+giveaway
 
-wping.js
+help.
 
-cum.js (meme not nsfw)
+inside.
 
-sources.js
+kill.
+
+maul
+
+noroundping
+
+num
+
+purge
+
+reload.
+
+remind
+
+restart
+
+rping
+
+sayas
+
+scale
+
+
+scrub
+
+snipe
+
+sping
+
+timer
+
+tping
+
+transfer
+
+verify
+
+wping
+
+cum (meme not nsfw)
+
+sources
 
 # Public Sandbox Invite Legacy (Prone to change)
 [Right Here](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&scope=bot)
