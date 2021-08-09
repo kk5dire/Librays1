@@ -35,11 +35,11 @@ maul
 
 noroundping
 
-num
+numberrand
 
 purge
 
-reload.
+reload
 
 remind
 
