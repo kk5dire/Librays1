@@ -36,7 +36,10 @@ module.exports = {
     },
 
     //Sends an embed message, or a normal text message if the bot doesn't have permissions.
-
+    sayMessage(message, channel) {
+        if (!message) message = '';
+        if(channel) {channel.send(message)} else {return message};
+    },
     //channel: the channel to send to
     //embed: the embed to be sent
     sendEmbed(channel, embed) {
