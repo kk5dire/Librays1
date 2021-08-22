@@ -37,7 +37,13 @@ module.exports = {
 
     //Sends an embed message, or a normal text message if the bot doesn't have permissions.
     sayMessage(message, to) {
+        
         if (!message) message = '';
+        
+        let channel = message.guild.channels.find(
+  channel => channel.name.toLowerCase() === to
+        )
+        if (!to) channel = message.channel
         if(to) {to.send(message)} else {return message.channel.send(message)};
     },
     //channel: the channel to send to
