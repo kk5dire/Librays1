@@ -1,4 +1,4 @@
-# Ready to invite? [Click me!](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&redirect_uri=https%3A%2F%2Fkk5dire.github.io%2FLibrays1%2F&response_type=code&scope=identify%20bot)
+# Ready to invite? [Click me!](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&redirect_uri=https%3A%2F%2Fkk5dire.github.io%2FLibrays1%2Fconfirm&response_type=code&scope=identify%20bot)
 
 
 # Other information 
