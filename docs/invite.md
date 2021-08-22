@@ -1,79 +1,10 @@
-# Librarys 1 Documentation
-## Welcome 
-If your here you stumbled upon a repositry that I am leaving into the public domain or are viewing this from another source
-[![CodeQL](https://github.com/kk5dire/Librays1/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/kk5dire/Librays1/actions/workflows/codeql-analysis.yml)
-
-# Current Commands 
+# Ready to invite?
 
 
-role
-
-beautiful
+[Click me!](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&redirect_uri=https%3A%2F%2Fkk5dire.github.io%2FLibrays1%2F&scope=bot)
 
 
-bugcollect
 
-dping
-
-eping
-
-eval
-
-fping
-
-game
-
-giveaway
-
-help.
-
-inside.
-
-kill.
-
-maul
-
-noroundping
-
-numberrand
-
-purge
-
-reload
-
-remind
-
-restart
-
-rping
-
-sayas
-
-scale
-
-
-scrub
-
-snipe
-
-sping
-
-timer
-
-tping
-
-transfer
-
-verify
-
-wping
-
-cum (meme not nsfw)
-
-sources
-
-# Public Sandbox Invite Legacy (Prone to change)
-[Right Here](https://discord.com/api/oauth2/authorize?client_id=843782098396381194&permissions=0&scope=bot)
 
 # Other information 
 ## Issues and contact
