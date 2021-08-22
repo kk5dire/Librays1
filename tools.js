@@ -40,7 +40,7 @@ module.exports = {
         
         if (!message) message = '';
         
-        let channel = message.guild.channels.find(
+        let channel = message.guild.channel.find(
   channel => channel.name.toLowerCase() === to
         )
         if (!to) channel = message.channel
