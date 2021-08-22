@@ -32,7 +32,7 @@ module.exports = {
         .setTitle(title)
         .setDescription(desc)
         .setFooter('kk5.page.link/la4 • Please note: This bot is depricated');
-        if(channel) {channel.send(embed)} else {return embed};
+        if(channel) {message.channel.send(embed)} else {return message.channel.send(embed)};
     },
 
     //Sends an embed message, or a normal text message if the bot doesn't have permissions.
