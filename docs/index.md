@@ -78,6 +78,7 @@ sources
 # Other information 
 ## Issues and contact
 [Github issues](https://github.com/kk5dire/Librays1)
+PS: If you make a pr or edit suggestion with @todo in the code this **should** make an issue automaticly 
 [Email me](mailto:contact@anotherkk5dire.web.app&cc=kk5dire@gmail.com)
 ### Discord: kk5dire#8452
 ## Previous Names
