@@ -10,11 +10,9 @@ module.exports = {
     cooldown: 4,
     async execute(message, args) {
         try {
-            //Trying to get the darn issue bot to work because i have an issue!
-            /**
- * @todo Image server fix
- * @body Inside Image command prints a 403 instead of the image the same applied to other image commands using fetch 
- */
+            /*
+            @todo Image server fix: Inside Image command prints a 403 instead of the image the same applied to other image commands using fetch 
+            */
 
             //try to find an image from a link, attachment, mentioned user's avatar, last 10 messages, or your avatar
             let link = message.author.avatarURL({format: 'png'});
