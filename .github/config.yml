@@ -1,2 +1,4 @@
 todo:
   keyword: "@todo"
+  autoAssign: "true"
+  
